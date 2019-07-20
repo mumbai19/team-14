@@ -65,20 +65,20 @@
 <br><br><br><br><br><br>
 <div class="container">
 <div class="col-md-5 mx-auto">
-<form class="text-center border border-light p-5" method="POST">
+<form class="text-center border border-light p-5" method="POST" action="">
 
     <p class="h4 mb-4">Sign in</p>
 
 	<!-- Name -->
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" style="color:black;" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
 
 	<!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
+    <input type="password" style="color:black;" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
 
 	<div id="message"></div>
 
     <!-- Sign in button -->
-    <button class="btn btn-info btn-block my-4" type="submit" name="submit">Sign in</button>
+    <input class="btn btn-info btn-block my-4" type="submit" name="submit" value="Sign In">Sign in
 
     <!-- Register -->
     <p>Not a member?
@@ -90,8 +90,6 @@
 </div>
  
 
-
-   
   
        <footer id="contact">
         <div class="container">
@@ -191,6 +189,72 @@
     <!--END OF CUSTOM JS-->
     
     <!--SCRIPTS ENDS HERE-->
+
+    <?php
+    require 'connect.inc.php';
+					
+                    if (isset ($_POST['submit'])){
+                        
+                                    if (isset ($_POST['name'])&&isset ($_POST['password']))
+                                    {
+                                        //echo 'ok';
+                                        $name=$_POST['name'];
+                                        $password=$_POST['password'];
+                                        if(!empty($name)&&!empty($password))
+                                        {
+                                            $login_query="SELECT * FROM `stake_holders` WHERE `username`='$name' AND `password`='$password' ";
+                                            
+                                            if($login_query_run=mysqli_query($connect,$login_query))
+                                            {
+                                                $rows=mysqli_num_rows($login_query_run);
+                                                if($rows==0)
+                                                {
+                                                    echo "<script>document.getElementById('message').innerHTML='Enter valid username and password combination';</script>";
+                                                }
+                                                else if($rows==1)
+                                                {
+                                                    
+                                                    //$user_id=mysql_result($login_query_run,0,'id');
+                                                    while($row = mysqli_fetch_assoc($login_query_run)) 
+                                                    {
+                                                       $user_id = $row['uid'];
+                                                       $name=$row['name'];
+                                                    }
+                                                    
+                                                    session_start();
+                                                    ob_start();
+                                                    
+                                                    $_SESSION['user_id']=$user_id;
+                                                    $_SESSION['name']=$name;
+                                                    /*echo 'session set';
+                                                    echo $user_id;*/
+                                                    //header('Location:loggedin_inc.php');
+                                                    if(isset ($_SESSION['user_id'])&& !empty($_SESSION['user_id']) && isset ($_SESSION['name'])&& !empty($_SESSION['name']))
+                                                    {
+                                                        //echo"<script>alert('yes')</script>";
+                                                        //header("Location: ./Product.php");
+                                                        echo "<script type='text/javascript'>window.location.href = 'Product.php';</script>";
+                                                        exit();
+                                                    }
+                                                    else
+                                                    {
+                                                        echo 'Not logged in';
+                                                    }
+                                                }
+                                            }
+                                            else
+                                            {
+                                                    echo 'query not run';
+                                            }			
+                                            
+                                        }
+                                        else
+                                        {
+                                            echo "<script>document.getElementById('message').innerHTML='Enter username and password';</script>";
+                                        }
+                                    }
+                    }
+        ?>
 
 </body>
 

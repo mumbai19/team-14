@@ -95,6 +95,9 @@ window.addEventListener('load', function() {
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
 <br>
 <br>
+<?php session_start();
+$name=$_SESSION['name'];
+?>
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
@@ -135,7 +138,7 @@ window.addEventListener('load', function() {
 $c=0;
  foreach($user as $det): ?>
   <div class="column">
-  <div class="card" style="width:250px; height:450px">
+  <div class="card" style="width:250px; height:400px">
     <img class="card-img-top" src="inv_imgs/<?php echo($det['image'])?>" alt="Card image" style="width:100%;heigth:200px">
     <p>
       <h4 class="card-title"><?php $c=$c+1; echo( $det['product_name'] )?></h4>
