@@ -71,6 +71,11 @@
 </head>
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
+
+<?php session_start();
+$name=$_SESSION['name'];
+?>
+
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
@@ -92,9 +97,9 @@
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
                        <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><button type="button" class="btn btn-default"><?php echo $name; ?></button></li>
+                       <li><button type="button" class="btn btn-default">Log Out</button></li>
                    </ul>
                </div>
            </div>
@@ -106,6 +111,15 @@
 <br>
 <br> 
 <div class="container" >
+<form action="Product.php" method="POST">
+<select style="padding:10px; font-size:18px;" name="filter">
+  <option value="volvo">Vicinity</option>
+  <option value="saab">Price</option>
+  <option value="mercedes">Rating</option>
+</select> 
+<input type="submit" value="FILTER" style="padding:10px; font-size:18px;">
+</form>
+<br><hr>
 <div class="row">
   <div class="column">
   <div class="card" style="width:250px">
@@ -250,5 +264,6 @@
   console.log('New star rating: ' + this.value);
   });
 </script>
+
 </body>
 </html>
