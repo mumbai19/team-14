@@ -188,12 +188,11 @@ India – 416405
                             <p class="copyright">Copyrights @ White Graphics, 2018</p>
                         </div><!--.col-md-6-->
                         <div class="col-md-6 links hidden-sm hidden-xs">
-                            <a href="#" class="bottom-links">Home </a><span>/ </span>
-                            <a href="#" class="bottom-links"> Training</a><span>/ </span>
-                            <a href="#" class="bottom-links">Ponds</a><span>/ </span>
+                            <a href="#home" class="bottom-links">Home </a><span>/ </span>
+                            <a href="training_home.php" class="bottom-links"> Training</a><span>/ </span>
+                            <a href="pond.php" class="bottom-links">Ponds</a><span>/ </span>
                             <a href="#" class="bottom-links">Schemes </a><span>/ </span>
-                            <a href="#" class="bottom-links">Seeds </a><span>/ </span>
-                            <a href="#" class="bottom-links">Fishes </a><span>/ </span>
+                            <a href="Product.php" class="bottom-links">Inventory</a><span>/ </span>
                         </div><!--.col-md-6-->
                     </div><!--.row-->
             </div><!--copyrights-->

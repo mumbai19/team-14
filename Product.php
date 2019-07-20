@@ -112,13 +112,11 @@ $state=$_SESSION['state'];
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
                        <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
+                       <li><a class="smooth-scroll" href="training_home.php">Training</a></li>
+                       <li><a class="smooth-scroll" href="pond.php">Ponds</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
+                       <li><a class="smooth-scroll" href="Product.php">Inventory</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <button type="button" class="btn btn-default"><?php echo $name; ?></button>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
