@@ -69,18 +69,28 @@
     <div class =col-md-3></div>
     <div class="col-md-6 align-self-center">
     <h3> SELL A PRODUCT </h3><br>
-    <form enctype="multipart/form-data">
+    <form enctype="multipart/form-data" method="post" action="sell.php">
     <div class="form-group">
-        <input type="text" class="form-control" id="productName" placeholder="Product Name">
+        <input type="text" style="color:black;" class="form-control" name="name" id="productName" placeholder="Product Name">
+    </div>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="Fish">Fish
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="Tool">Tools
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio" value="Seeds">Seeds
+    </label>
+    <br><br>
+    <div class="form-group">
+        <textarea class="form-control" style="color:black;" rows="5" id="productDescription" name="description" placeholder="Product Description"></textarea>
     </div>
     <div class="form-group">
-        <textarea class="form-control" rows="5" id="productDescription" placeholder="Product Description"></textarea>
-    </div>
-    <div class="form-group">
-        <input type="text" class="form-control" id="productPrice" placeholder="Product Price">
+        <input type="text" style="color:black;" class="form-control" id="productPrice" name="price" placeholder="Product Price">
     </div>
     <input type="file" class="custom-file-input"  name="fileToUpload" id="fileToUpload"><br>
-    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    <input type="submit" class="btn btn-primary btn-lg" name="submit" value="Save">
     </form>
     </div>
     </div>
@@ -190,6 +200,41 @@ India – 416405
     <!--END OF CUSTOM JS-->
     
     <!--SCRIPTS ENDS HERE-->
+
+    <?php
+    require 'connect.inc.php';
+        if(isset($_POST['submit'])){
+            $name=$_POST['name'];
+            $optradio=$_POST['optradio'];
+            $description=$_POST['description'];
+            $price=$_POST['price'];
+            $tmpFilePath = $_FILES['fileToUpload']['tmp_name'];
+            $image=$_POST['fileToUpload'];
+            $image_name = $_FILES['fileToUpload']['name'];
+            $query = "INSERT INTO product (product_name,product_type,price,comments,image) VALUES ('$name','$optradio','$price','$description','$image_name')";
+					if(!mysqli_query($connect,$query))
+					{
+						echo 'not inseted';
+					}
+					else
+					{
+                        echo ' inseted';
+                    }
+                                if($tmpFilePath != ""){
+                                    $article = $_FILES['fileToUpload']['name'];
+                                    $target="productimages/".basename($_FILES['fileToUpload']['name']);
+                                    if(move_uploaded_file($tmpFilePath,$target))
+                                    {
+                                        
+                                    }
+                                    else
+                                    {
+                                        
+                                        //echo 'Unsucessful. Could not upload.';
+                                    }
+                                }
+        }
+    ?>
 
 </body>
 
