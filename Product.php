@@ -99,7 +99,7 @@ $name=$_SESSION['name'];
                        <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                        <li><button type="button" class="btn btn-default"><?php echo $name; ?></button></li>
-                       <li><button type="button" class="btn btn-default">Log Out</button></li>
+                       <li><button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Log Out</a></button></li>
                    </ul>
                </div>
            </div>
