@@ -61,24 +61,7 @@
            </div>
        </div>
    </nav>
-   <!--HOME SECTION-->
-   <section id="home" class="home-section">
-       <div class="home-cover bg-parallax wow animated fadeIn">
-           <div class="home-content-box">
-               <div class="home-content-box-inner text-center">
-                   <div class="home-heading">
-                       <h3 class="text-heading wow animated zoomIn">JALJEEVIKA<br/>Transforming Lives</h3>
-                   </div><!--.home-heading-->
-                   <div class="home-btn wow animated zoomIn">
-                       <a href="#about" class="btn btn-lg btn-general btn-white smooth-scroll" role="button" title="View Our Work">View Our Work</a>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
-   <!--END OF HOME SECTION-->
-   
-   
+  
    
    
    
