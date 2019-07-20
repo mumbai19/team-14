@@ -211,8 +211,9 @@ global $connection;
                     
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="margin-top: 15px;"><div class="row">
-                    <div class="col-md-3">
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="margin-top: 15px;">
+            <div class="row">
+<!--                    <div class="col-md-3">-->
                        
                        <?php
                         require_once("db.php");
@@ -228,16 +229,26 @@ global $connection;
 //                            echo "<div class='tab-pane fade' id='profile' role='tabpanel' aria-labelledby='profile-tab' style='margin-top: 15px;'><div class='row'>
 //                                <div class='col-md-3'>";
                             
-                            
+//                            echo "<div class='col-md-3'>";
                             $c=$c+1;
                             $row=mysqli_fetch_assoc($result);
+//                            echo "<div class='col-md-'>";
+                        
+                            echo "<div class='col-md-3'>";
+                            echo "<div class='w3-panel w3-card-2'><p></p> </div>";
 //                            print_r($row);
+                            
                             echo $row['title'];
+                            echo "<br>";
                             echo $row['step1'];
+                            echo "<br>";
                             echo $row['step2'];
+                            echo "<br>";
                             echo $row['step3'];
                             echo "<br>";
-                            
+                            echo "<br>";
+                            echo "</div>";
+                        
                         }
                         
                         
@@ -268,7 +279,7 @@ global $connection;
                         </div>
                     </div>
 -->
-                </div>
+<!--                </div>-->
                 </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="margin-top: 15px;"><div class="row">
                     <div class="col-md-3">
