@@ -1,5 +1,5 @@
 <?php
-require("phpsqlajax_dbinfo.php");
+include("include/config.php");
 
 function parseToXML($htmlStr)
 {
@@ -18,7 +18,7 @@ if (!$conn) {
 }
 
 // Set the active MySQL database
-$db_selected = mysqli_select_db($database, $conn);
+$db_selected = mysqli_select_db($db, $conn);
 if (!$db_selected) {
   die ('Can\'t use db : ' . mysqli_error());
 }
@@ -40,9 +40,9 @@ $ind=0;
 while ($row = @mysqli_fetch_assoc($result)){
   // Add to XML document node
   echo '<marker ';
-  echo 'id="' . $row['id'] . '" ';
-  echo 'name="' . parseToXML($row['name']) . '" ';
-  echo 'address="' . parseToXML($row['address']) . '" ';
+  echo 'id="' . $row['marker_id'] . '" ';
+  echo 'name="' . parseToXML($row['mrker_name']) . '" ';
+  echo 'address="' . parseToXML($row['pond_add']) . '" ';
   echo 'lat="' . $row['lat'] . '" ';
   echo 'lng="' . $row['lng'] . '" ';
   echo 'type="' . $row['type'] . '" ';
