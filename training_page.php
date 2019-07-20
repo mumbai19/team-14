@@ -37,6 +37,55 @@ global $connection;
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- End of Costom Styling css-->
+    
+    
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  margin : 45px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+
+    
+    
+    
+    
 </head>
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
@@ -162,25 +211,61 @@ global $connection;
             </div>
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="margin-top: 15px;"><div class="row">
                     <div class="col-md-3">
-                       <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
+                       
+                       <?php
+                        require_once("db.php");
+                        global $connection;
+                        
+                        $query="Select * from wikihow_doc";
+                        $result=mysqli_query($connection,$query);
+                        $num=mysqli_num_rows($result);
+                        $c=0;
+                        
+                        while($c!=$num)
+                        {
+//                            echo "<div class='tab-pane fade' id='profile' role='tabpanel' aria-labelledby='profile-tab' style='margin-top: 15px;'><div class='row'>
+//                                <div class='col-md-3'>";
+                            
+                            
+                            $c=$c+1;
+                            $row=mysqli_fetch_assoc($result);
+//                            print_r($row);
+                            echo $row['title'];
+                            echo $row['step1'];
+                            echo $row['step2'];
+                            echo $row['step3'];
+                            echo "<br>";
+                            
+                        }
+                        
+                        
+                        
+                        
+                       ?>
+                        
+                        
                     </div>
+<!--
                     <div class="col-md-3">
                         <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
                         <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
                         </div>
                     </div>
+-->
+<!--
                     <div class="col-md-3">
                         <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
                         <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
                         </div>
                     </div>
+-->
+<!--
                     <div class="col-md-3">
                         <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
                         <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
                         </div>
                     </div>
+-->
                 </div>
                 </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="margin-top: 15px;"><div class="row">

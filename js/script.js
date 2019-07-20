@@ -125,12 +125,14 @@ $(function(){
     $("a.smooth-scroll").click(function(event){
         //don't perform your default action
         event.preventDefault();
-        
+
         var section = $(this).attr("href");
         
         $("html, body").animate({
-            scrollTop: $(section).offset().top-64
+            //scrollTop: $(section).offset().top-64
         }, 1500, "easeOutExpo")
+        console.log("c");
+
     });
     
     //onload
