@@ -380,7 +380,7 @@ phone-fax-email strong{
 
 .navbar-inverse{
     border: none;
-    background-color: transparent;
+    background-color: black;
 }
 .wg-top-navbar{
     background: rgba(0, 0, 0, 0.7);

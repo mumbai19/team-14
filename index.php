@@ -238,24 +238,31 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-left">
-                      <h3>White Graphics</h3>
-                      <p>We believe in <strong>Simple</strong> , <strong>Clean</strong> &amp; <strong>Modern</strong> Design Standards with Responsive Approach. Browse the amazing work of our company.</p> 
+                      <h3>Jaljeevika</h3>
+                      <p>We at Jaljeevika bring <strong>Science</strong> and <strong>Farmer</strong> together amd work tpwards promotion of aquatic livelyhood</p> 
                       <div class="contact-info">
                           <address>
-                              <strong>Headquaters:</strong>
-                              <p>313, Evergreen CHS.<br>
-                              Airoli Sector 15,<br>
-                              New Bombay,<br>
-                              Mumbai - 55.
+                            
+
+
+Sangli, Maharashtra,
+India – 416405
+
+
+                              <p> C/O Payod,<br>
+                              976, A/P Hingangaon,<br>
+                              Tal: K.Mahankal;<br>
+                              Sangli, Maharashtra,<br>
+                            India – 416405
+
                               </p>
                           </address>
                           <div class="phone-fax-email">
                              <p>
-                              <strong>Phone:</strong> <span>(719)-778-8804</span>
+                              <strong>Phone:</strong> <span>8600043905</span>
                               <br/>
-                              <strong>Fax:</strong> <span>(719)-778-8804 8890</span>
-                              <br/>
-                              <strong>Email:</strong> <span>info@whitegrapphics.in</span>
+
+                              <strong>Email:</strong> <span>aquatic.livelihood@gmail.com</span>
                               <br/> 
                               </p>
                           </div>
@@ -292,12 +299,11 @@
                         </div><!--.col-md-6-->
                         <div class="col-md-6 links hidden-sm hidden-xs">
                             <a href="#" class="bottom-links">Home </a><span>/ </span>
-                            <a href="#" class="bottom-links">Services </a><span>/ </span>
-                            <a href="#" class="bottom-links">About </a><span>/ </span>
-                            <a href="#" class="bottom-links">Work </a><span>/ </span>
-                            <a href="#" class="bottom-links">Team </a><span>/ </span>
-                            <a href="#" class="bottom-links">Pricing </a><span>/ </span>
-                            <a href="#" class="bottom-links">Clients </a>
+                            <a href="#" class="bottom-links"> Training</a><span>/ </span>
+                            <a href="#" class="bottom-links">Ponds</a><span>/ </span>
+                            <a href="#" class="bottom-links">Schemes </a><span>/ </span>
+                            <a href="#" class="bottom-links">Seeds </a><span>/ </span>
+                            <a href="#" class="bottom-links">Fishes </a><span>/ </span>
                         </div><!--.col-md-6-->
                     </div><!--.row-->
             </div><!--copyrights-->
