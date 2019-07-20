@@ -119,9 +119,9 @@ $name=$_SESSION['name'];
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
                        <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <button type="button" class="btn btn-default"><?php echo $name; ?></button>
+                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
            </div>
@@ -133,7 +133,14 @@ $name=$_SESSION['name'];
 <br>
 <br> 
 <div class="container" >
-
+<form method="post" action="Product.php">
+<select>
+  <option value="mercedes">None</option>
+  <option value="volvo">Vicinity</option>
+  <option value="saab">Price</option>
+  <option value="mercedes">Rating</option>
+</select> 
+</form>
 <?php
 $c=0;
  foreach($user as $det): ?>
