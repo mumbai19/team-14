@@ -83,6 +83,7 @@ window.addEventListener('load', function() {
 <br>
 <?php session_start();
 $name=$_SESSION['name'];
+$state=$_SESSION['state'];
 ?>
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
@@ -121,10 +122,10 @@ $name=$_SESSION['name'];
 <div class="column">
 <form method="post" action="Product.php">
 <select style="padding:10px; font-size:18px;" name="filter">
-  <option value="mercedes">None</option>
-  <option value="volvo">Vicinity</option>
-  <option value="saab">Price</option>
-  <option value="mercedes">Rating</option>
+  <option value="none">None</option>
+  <option value="vicinity">Vicinity</option>
+  <option value="price">Price</option>
+  <option value="rating">Rating</option>
 </select> 
 <input type="submit" value="FILTER" name="submit" style="padding:9px; font-size:18px;">
 </div>
@@ -137,7 +138,10 @@ if(mysqli_connect_errno())
     echo 'Failed to connect' . mysqli_connect_errno();
 }
 if(isset($_POST['submit'])){
+  
   $filter=$_POST['filter'];
+  //echo'<script>alert("'.$filter.'")</script>';
+  if ($filter!='vicinity'){
   $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
   from product as p
   inner join type_of_user as t on p.UID=t.UID
@@ -145,6 +149,16 @@ if(isset($_POST['submit'])){
   ORDER BY '".$filter."' DESC";
   $res= mysqli_query($conn,$query);
   $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+  }
+  else{
+    $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID
+  where state='$state'";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+  }
 }
 else{
   $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact

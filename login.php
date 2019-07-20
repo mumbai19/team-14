@@ -219,6 +219,7 @@
                                                     {
                                                        $user_id = $row['uid'];
                                                        $name=$row['name'];
+                                                       $state=$row['state'];
                                                     }
                                                     
                                                     session_start();
@@ -226,6 +227,7 @@
                                                     
                                                     $_SESSION['user_id']=$user_id;
                                                     $_SESSION['name']=$name;
+                                                    $_SESSION['state']=$state;
                                                     /*echo 'session set';
                                                     echo $user_id;*/
                                                     //header('Location:loggedin_inc.php');
