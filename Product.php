@@ -116,7 +116,9 @@ body {
       <p><b>Vendor name</b>: Ajay More</p>
       <p><b>Contact no</b>:992003990</p>
       
-      <form class="rating">
+      <a href="#" class="btn btn-primary">Rs 500</a>
+   </p>
+   <form class="rating">
         <label>
           <input type="radio" name="stars" value="1" />
           <span class="icon">★</span>
@@ -148,11 +150,8 @@ body {
           <span class="icon">★</span>
         </label>
       </form>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-   </p>
   </div>
   </div>
-
   <div class="column">
   <div class="card" style="width:250px">
     <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
