@@ -5,7 +5,7 @@
     <!--TITLE OF THE PAGE-->
     <title>Jaljeevika</title>
 
-    <link rel="shortcut icon" href="img/icon.jpg">
+<!--    <link rel="shortcut icon" href="img/icon.jpg">-->
 
     <!--Fontawesome 4.7.0-->
     <link rel="stylesheet" href="vendors/fontawesome/css/font-awesome.min.css">
