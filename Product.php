@@ -81,7 +81,9 @@ window.addEventListener('load', function() {
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
 <br>
 <br>
-<?php session_start();
+<?php
+session_start();
+ob_start();
 $name=$_SESSION['name'];
 $state=$_SESSION['state'];
 ?>
