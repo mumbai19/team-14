@@ -1,18 +1,4 @@
-<?php
-$conn= mysqli_connect('localhost','root','','jaljeevika');
-if(mysqli_connect_errno())
-{
-    echo 'Failed to connect' . mysqli_connect_errno();
-}
-$query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
-from product as p
-inner join type_of_user as t on p.UID=t.UID
-inner join stake_holders as st on t.UID=st.UID ";
-$res= mysqli_query($conn,$query);
-$user = mysqli_fetch_all($res,MYSQLI_ASSOC);
 
-
-?>
 <script>
 window.addEventListener('load', function() {
     console.log($user)
@@ -134,7 +120,7 @@ $name=$_SESSION['name'];
 <div class="row justify-content-center">
 <div class="column">
 <form method="post" action="Product.php">
-<select style="padding:10px; font-size:18px;">
+<select style="padding:10px; font-size:18px;" name="filter">
   <option value="mercedes">None</option>
   <option value="volvo">Vicinity</option>
   <option value="saab">Price</option>
@@ -144,6 +130,34 @@ $name=$_SESSION['name'];
 </div>
 </div>
 </form>
+<?php
+$conn= mysqli_connect('localhost','root','','jaljeevika');
+if(mysqli_connect_errno())
+{
+    echo 'Failed to connect' . mysqli_connect_errno();
+}
+if(isset($_POST['submit'])){
+  $filter=$_POST['filter'];
+  $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID 
+  ORDER BY '".$filter."' DESC";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+}
+else{
+  $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+}
+
+
+
+?>
 <?php
 $c=0;
  foreach($user as $det): ?>
@@ -203,5 +217,6 @@ $c=0;
   console.log('New star rating: ' + this.value);
   });
 </script>
+
 </body>
 </html>
