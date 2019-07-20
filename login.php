@@ -50,7 +50,6 @@
                        <li><a href="index.php">Home</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a href="signup.php">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
                    </ul>
                </div>
