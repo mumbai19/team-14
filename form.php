@@ -44,6 +44,15 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
+                   <li><div id="google_translate_element"></div></li>
+                    <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+                    </script>
+
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    
                        <li><a class="smooth-scroll" href="#home">Home</a></li>
                        <li><a class="smooth-scroll" href="#about">Training</a></li>
                        <li><a class="smooth-scroll" href="#work">Ponds</a></li>
@@ -114,22 +123,11 @@
 
 
 </form>
-    <div id="google_translate_element"></div>
-
-      <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    
+ 
 
  </div>   
     </div> 
- 
-   
+
    
    
    
