@@ -47,15 +47,11 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="training_home.php">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
+                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a href="registration.php">Sign Up</a></li>
+                       <li><a href="login.php">LOGIN</a></li>
                    </ul>
                </div>
            </div>
@@ -68,9 +64,6 @@
                <div class="home-content-box-inner text-center">
                    <div class="home-heading">
                        <h3 class="text-heading wow animated zoomIn">JALJEEVIKA<br/>Transforming Lives</h3>
-                   </div><!--.home-heading-->
-                   <div class="home-btn wow animated zoomIn">
-                       <a href="#about" class="btn btn-lg btn-general btn-white smooth-scroll" role="button" title="View Our Work">View Our Work</a>
                    </div>
                </div>
            </div>
