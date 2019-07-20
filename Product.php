@@ -130,16 +130,19 @@ $name=$_SESSION['name'];
 <br>
 <br>
 <br>
-<br>
-<br> 
 <div class="container" >
+<div class="row justify-content-center">
+<div class="column">
 <form method="post" action="Product.php">
-<select>
+<select style="padding:10px; font-size:18px;">
   <option value="mercedes">None</option>
   <option value="volvo">Vicinity</option>
   <option value="saab">Price</option>
   <option value="mercedes">Rating</option>
 </select> 
+<input type="submit" value="FILTER" name="submit" style="padding:9px; font-size:18px;">
+</div>
+</div>
 </form>
 <?php
 $c=0;
