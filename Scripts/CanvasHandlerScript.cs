@@ -15,6 +15,7 @@ public class CanvasHandlerScript : MonoBehaviour
     private GameObject tags;
     private GameObject defaultPanel;
     private Button lastButtonClicked;
+    private Text title;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +29,8 @@ public class CanvasHandlerScript : MonoBehaviour
         defaultPanel = GameObject.Find("DefaultPanel");
         //cancelButton = GameObject.FindWithTag("Cancel");
         cancelButton = GameObject.Find("CancelButton").GetComponent<Button>();
+        title = GameObject.Find("Title").GetComponent<Text>();
+        title.enabled = false;
 
         videoButton.gameObject.SetActive(true);
 
@@ -54,6 +57,7 @@ public class CanvasHandlerScript : MonoBehaviour
                     youtubePlayerObject = tempGameObject;
                     tempGameObject.SetActive(true);
                     youtubePlayerObject.GetComponent<YoutubePlayer>().Play();
+                title.enabled = true;
                     cancelButton = GetCancelButton(tempGameObject);
                     
                 }
@@ -64,7 +68,7 @@ public class CanvasHandlerScript : MonoBehaviour
         cancelButton.onClick.AddListener(delegate {
 
             lastButtonClicked = cancelButton;
-
+            title.enabled = false;
 
 
             foreach (YoutubePlayer youtubePlayer in canvasObject.GetComponentsInChildren<YoutubePlayer>())
