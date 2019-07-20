@@ -47,15 +47,14 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a  href="#home">Home</a></li>
+                       <li><a  href="training_home.php">Training</a></li>
+                       <li><a href="#work">Ponds</a></li>
+                       <li><a  href="#testimonials">Schemes</a></li>
+                       <li><a  href="Product.php">Inventory</a></li>
+                       <li><a  href="#contact">Contact</a></li>
+                       <button type="button" class="btn btn-default"><a href="logout.php">Logout</a></button>
+                       
                    </ul>
                </div>
            </div>
@@ -134,12 +133,8 @@
 
 
     <!-- Sign in button -->
-    <button class="btn btn-info btn-block my-4" type="submit" name="submit">Register</button>
+    <button class="btn btn-info btn-block my-4" type="submit" name="submit">Submit</button>
 
-    <!-- Register -->
-    <p>Already have an account?
-        <a href="login.php">Sign In</a>
-    </p>
 
 </form>
 </div>
@@ -155,7 +150,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-left">
-                      <h3>White Graphics</h3>
+                      <h3>Jaljeevika</h3>
                       <p>We believe in <strong>Simple</strong> , <strong>Clean</strong> &amp; <strong>Modern</strong> Design Standards with Responsive Approach. Browse the amazing work of our company.</p> 
                       <div class="contact-info">
                           <address>

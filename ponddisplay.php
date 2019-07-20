@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -31,6 +32,8 @@
     <!-- End of Costom Styling css-->
 </head>
 
+
+
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
@@ -47,11 +50,15 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a href="#home">Home</a></li>
+                       <li><a class="smooth-scroll" href="#home">Home</a></li>
+                       <li><a class="smooth-scroll" href="#about">Training</a></li>
+                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
+                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
+                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
+                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="">Sign Up</a></li>
-                       <li><a href="login.php">LOGIN</a></li>
+                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
                    </ul>
                </div>
            </div>
@@ -59,108 +66,84 @@
    </nav>
 
 <br><br><br><br><br><br>
-<div class="container">
+
+<?php
+  $servername = "127.0.0.1";
+  $username = "root";
+  $password = "";
+  $dbname = "jaljeevika";
+
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+  #$id = $_REQUEST['id'] ;
+  $id=7;
+  $sql = "SELECT * from pond_details where UID = '".$id."'";
+ $result = $conn->query($sql);
+if($result->num_rows > 0) {
+  $row = $result->fetch_assoc();}
+?>
+
+<div style="display:inline-block; font-size:20px;" class="container">
 <!-- Default form login -->
-<div class="col-md-5 mx-auto">
-<form class="text-center border border-light p-5" method="POST">
+<div style="text-align: center;" class="clo-md-5 mx-auto">
 
-    <p class="h4 mb-4">Sign Up</p>
+<form class="text-center border border-light p-5" method="POST" action="" enctype="multipart/form-data">
 
-	<!-- Name -->
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <p class="h4 mb-4"><h2>Pond Details</h2></p>
 
-	<!-- Username -->
-    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
+  <!-- Name -->
+  <div class="row">
+  <label> Name: </label>
+   <?php echo  $row['pond_name'] ;?> 
+ </div>
 
-    <!-- Email -->
-    <input type="email" id="defaultLoginFormEmail" name="emailid" class="form-control mb-4" placeholder="E-mail">
-
-	<!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
-	
-	<!-- Phone Number -->
-    <input type="text" id="defaultLoginFormPhone" name="phone" class="form-control mb-4" placeholder="Phone No.">
-
-	<!-- Address -->
-    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
-	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
-	<div class="form-row mb-4">
+ <div class="row">
+  <label> Address: </label>
+  <?php echo  $row['add_line1'] ." ". $row['add_line2'] ." ". $row['village'] ." ". $row['city'] ." ". $row['pincode'];?>
+</div>
+  <div class="form-row mb-4">
+        
+              <label> State: </label>
+              <?php echo  $row['state'] ;?> 
+      
         <div class="col">
-            <!-- City -->
-            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+              <label> pH: </label>
+              <?php echo  $row['ph'] ;?> 
         </div>
+      
         <div class="col">
-            <!-- District -->
-            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
-        </div>
-    </div>
-	<div class="form-row mb-4">
-		<div class="col">
-            <!-- State -->
-            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State">
+              <label> Pond Size: </label>
+             <?php echo  $row['pond_size'] ;?> 
         </div>
         <div class="col">
-            <!-- District -->
-            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
-        </div>
-    </div>
-
-
-	Login As :<br>
-	<div class="form-row mb-4">
-		<div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-			<label class="custom-control-label" for="defaultUnchecked">Fisherman</label>
-			</div>
+              <label> Dissolved O2: </label>
+             <?php echo  $row['dissolved_o2'] ;?> 
         </div>
         <div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-			<label class="custom-control-label" for="defaultChecked">Expert</label>
-			</div>
-        </div>
-    </div>
-	<div class="form-row mb-4">
-		<div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-			<label class="custom-control-label" for="defaultUnchecked">Vendor</label>
-			</div>
+              <label> Pond Depth: </label>
+             <?php echo  $row['pond_depth'] ;?> 
         </div>
         <div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-			<label class="custom-control-label" for="defaultChecked">Pond Owner</label>
-			</div>
+              <label> Total Dissolved Solutes: </label>
+             <?php echo  $row['total_dissolved_solutes'] ;?> 
         </div>
-    </div>
-	
-	<div id="message"></div>
-
-    <!-- Sign in button -->
-    <button class="btn btn-info btn-block my-4" type="submit" name="submit">Register</button>
-
-    <!-- Register -->
-    <p>Already have an account?
-        <a href="login.php">Sign In</a>
-    </p>
-
+  </div>
 </form>
 </div>
-<!-- Default form login -->
 </div>
+    
+
  
-
-
-   
   
        <footer id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-left">
-                      <h3>White Graphics</h3>
+                      <h3>Jaljeevika</h3>
                       <p>We believe in <strong>Simple</strong> , <strong>Clean</strong> &amp; <strong>Modern</strong> Design Standards with Responsive Approach. Browse the amazing work of our company.</p> 
                       <div class="contact-info">
                           <address>
