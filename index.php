@@ -48,7 +48,7 @@
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
                        <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
+                       <li><a class="smooth-scroll" href="training_home.php">Training</a></li>
                        <li><a class="smooth-scroll" href="#work">Ponds</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
