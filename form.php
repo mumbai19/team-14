@@ -18,12 +18,7 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!-- end of core plugin css-->
     
-    <!--ANIMATE CSS-->
-    <link rel="stylesheet" href="vendors/animate/animate.css">
-    <!--END OF ANIMATE CSS-->
     
-    <!--MAGNIFY CSS-->
-    <link rel="stylesheet" href="vendors/magnify/magnific-popup.css">
     
     <!--Costom Styling css-->
     <link rel="stylesheet" href="css/style.css">
@@ -33,6 +28,8 @@
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
+   <div id="google_translate_element"></div>
+
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -70,36 +67,45 @@
    <br>
 <div class="container">  
 
+   
 
- <form class="text-center border border-light p-5" method="POST">
+
+<div style="font-color:black;">
+ <form class="text-center border border-light p-5" method="POST" action="multilingual.php">
 
     <p class="h4 mb-4">Sign in</p>
 
 	<!-- Name -->
     <br><br>
      <strong><lable>Title</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="title" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="title" class="form-control mb-4" placeholder="Name" style="color:black;">
 
 
 
     <br><br>
      <strong><lable>Step1</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step1" class="form-control mb-4" placeholder="step 1">
+    <input type="text" id="defaultLoginFormName" name="step1" class="form-control mb-4" placeholder="step 1" style="color:black;">
     
     <br><br>
      <strong><lable>Step2</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step2" class="form-control mb-4" placeholder="step 2">
+    <input type="text" id="defaultLoginFormName" name="step2" class="form-control mb-4" placeholder="step 2" style="color:black;">
      
      <br><br>
      <strong><lable>Step3</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step3" class="form-control mb-4" placeholder="step 3">
+    <input type="text" id="defaultLoginFormName" name="step3" class="form-control mb-4" placeholder="step 3" style="color:black;">
     
     <br><br>
      <strong><lable>Step4</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step4" class="form-control mb-4" placeholder="step 4">
+    <input type="text" id="defaultLoginFormName" name="step4" class="form-control mb-4" placeholder="step 4" style="color:black;">
 
 	<div id="message"></div>
 
+   
+  
+
+   
+   
+   
     <!-- Sign in button -->
     <button class="btn btn-lg btn-general btn-white smooth-scroll" type="submit" name="submit">Submit</button>.
     
@@ -108,17 +114,21 @@
 
 
 </form>
+    <div id="google_translate_element"></div>
+
+      <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    
 
  </div>   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+    </div> 
+ 
    
    
    
@@ -209,23 +219,30 @@ India – 416405
     <!--CORE JS-->
     
     <!--jQuery Script-->
-    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+    
+ 
+    
+    
+<!--    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>-->
     <!--Bootstrap Script-->
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+<!--    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>-->
     
     <!--wow.js-->
 
     <!--COUNTERUP-->
+<!--
     <script src="vendors/waypoints/jquery.waypoints.min.js"></script>
     <script src="vendors/counterup/jquery.counterup.min.js"></script>
     
+-->
     <!--Easing-->
-    <script src="vendors/easing/easing.js"></script>
+<!--    <script src="vendors/easing/easing.js"></script>-->
+    
     
     <!--END OF CORE JS-->
     
     <!--CUSTOM JS-->
-    <script src="js/script.js"></script>
+<!--    <script src="js/script.js"></script>-->
     <!--END OF CUSTOM JS-->
     
     <!--SCRIPTS ENDS HERE-->
