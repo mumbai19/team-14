@@ -48,15 +48,15 @@ $result4 = $trans->translate($source, $target, $mstep3);
 $mstep4 = $step4;
 $result5 = $trans->translate($source, $target, $mstep4);
 
-$query="Insert into wikihow_doc(id,title,language_id,step1,step2,step3,step4) values ($result1,'$result2',2,'$result3','$result4','$result4','$mstep5')";
+$query="Insert into wikihow_doc(id,title,language_id,step1,step2,step3,step4) values ($result1,'$result2',2,'$result3','$result4','$result4','$result5')";
 //echo $query;
 $result=mysqli_query($connection,$query);
 
 
 
 echo $result5;
-header("Location: training_page.php");
-exit();
+//header("Location: training_page.php");
+//exit();
 ?>
 
 
