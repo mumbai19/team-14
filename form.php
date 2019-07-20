@@ -28,7 +28,7 @@
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
-   <div id="google_translate_element"></div>
+  
 
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
@@ -44,15 +44,14 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a href="index.php">Home</a></li>
+                       <li><a  href="training_page.php">Training</a></li>
+                       <li><a  href="pond.php">Ponds</a></li>
+                       <li><a  href="#testimonials">Schemes</a></li>
+                       <li><a  href="Product.php">Inventory</a></li>
+                       <li><a  href="#clients">Sign Up</a></li>
+                       <li><a  href="#contact">Contact</a></li>
+                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
            </div>

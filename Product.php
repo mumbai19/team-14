@@ -102,14 +102,12 @@ $state=$_SESSION['state'];
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <button type="button" class="btn btn-default"><?php echo $name; ?></button>
+                       <li><a  href="#home">Home</a></li>
+                       <li><a  href="training_home">Training</a></li>
+                       <li><a  href="pond.php">Ponds</a></li>
+                       <li><a  href="#testimonials">Schemes</a></li>
+                       <li><a  href="Product.php">Inventory</a></li>
+                       <li><a href="#contact">Contact</a></li>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
