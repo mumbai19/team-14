@@ -78,35 +78,34 @@
 	<!-- Name -->
     <br><br>
      <strong><lable>Title</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="title" class="form-control mb-4" placeholder="Name">
 
 
 
     <br><br>
      <strong><lable>Step1</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="step1" class="form-control mb-4" placeholder="step 1">
     
     <br><br>
      <strong><lable>Step2</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="step2" class="form-control mb-4" placeholder="step 2">
      
      <br><br>
      <strong><lable>Step3</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="step3" class="form-control mb-4" placeholder="step 3">
     
     <br><br>
      <strong><lable>Step4</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="step4" class="form-control mb-4" placeholder="step 4">
 
 	<div id="message"></div>
 
     <!-- Sign in button -->
-    <button class="btn btn-lg btn-general btn-white smooth-scroll" type="submit" name="submit">Sign in</button>
+    <button class="btn btn-lg btn-general btn-white smooth-scroll" type="submit" name="submit">Submit</button>.
+    
 
     <!-- Register -->
-    <p>Not a member?
-        <a href="signup.php">Register</a>
-    </p>
+
 
 </form>
 
