@@ -1,71 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/rating.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      height: 100%;
-    }
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #555;
-      color: white;
-      padding: 15px;
-    }
-    .panel panel-default{
-        padding:100px;
-    }
-    .panel-body{
-        padding-left:100px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height:auto;
-        padding: 15px;
-      }
-      .panel-body{
-        padding-left:1px;
-    }
-      .row.content {height:auto;} 
-    }
+  <!--TITLE OF THE PAGE-->
+  <title>Jaljeevika</title>
 
-  </style>
-</head>
-<body>
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<!--    <link rel="shortcut icon" href="img/icon.jpg">-->
+
+    <!--Fontawesome 4.7.0-->
+    <link rel="stylesheet" href="vendors/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/rating.css">
+    <!--Fonts Used-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+    
+    <!--core plugin css-->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+    <!-- end of core plugin css-->
+    
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+    <!--END OF ANIMATE CSS-->
+    
+    <!--MAGNIFY CSS-->
+    <link rel="stylesheet" href="vendors/magnify/magnific-popup.css">
+    
+    <!--Costom Styling css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- End of Costom Styling css-->
+    <style>
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 /* Float four columns side by side */
 .column {
@@ -102,9 +69,42 @@ body {
 }
 </style>
 </head>
-<body>
 
+<body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
+   <!--NAVIGATION-->
+   <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+       <div class="container-fluid">
+           <div class="wg-nav-wrapper">
+               <div class="nav-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wg-menu">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                   <a href="#" class="navbar-brand">JALJEEVIKA</a>
+               </div>
+               <div id="wg-menu" class="collapse navbar-collapse">
+                   <ul class="nav navbar-nav">
+                       <li><a class="smooth-scroll" href="#home">Home</a></li>
+                       <li><a class="smooth-scroll" href="#about">Training</a></li>
+                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
+                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
+                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
+                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
+                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
+                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </nav>
 <br>
+<br>
+<br>
+<br>
+<br> 
 <div class="container" >
 <div class="row">
   <div class="column">
@@ -192,7 +192,6 @@ body {
 </div>
 </div>
 <br>
-
 <div class="row">
   <div class="column">
   <div class="card" style="width:250px">
@@ -206,7 +205,6 @@ body {
 </p>
   </div>
   </div>
-
   <div class="column">
   <div class="card" style="width:250px">
     <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
@@ -247,7 +245,6 @@ body {
   </div>
 </div>
 </div>
-
 <script>
   $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
