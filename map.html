@@ -35,19 +35,19 @@
 
         function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(-33.863276, 151.207977),
+          center: new google.maps.LatLng(19.2688, 72.8731),
           zoom: 12
         });
         var infoWindow = new google.maps.InfoWindow;
 
           // Change this depending on the name of your PHP or XML file
-          downloadUrl('https://storage.googleapis.com/mapsdevsite/json/mapmarkers2.xml', function(data) {
+          downloadUrl('map.php', function(data) {
             var xml = data.responseXML;
             var markers = xml.documentElement.getElementsByTagName('marker');
             Array.prototype.forEach.call(markers, function(markerElem) {
-              var id = markerElem.getAttribute('id');
-              var name = markerElem.getAttribute('name');
-              var address = markerElem.getAttribute('address');
+              var id = markerElem.getAttribute('marker_id');
+              var name = markerElem.getAttribute('mrker_name');
+              var address = markerElem.getAttribute('pond_add');
               var type = markerElem.getAttribute('type');
               var point = new google.maps.LatLng(
                   parseFloat(markerElem.getAttribute('lat')),
@@ -97,7 +97,7 @@
       function doNothing() {}
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-hr6ajJUL5b3QPQftNQur0SYaviSIAr8&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjwoAj3MDp2Slhr7iuRICFKEYW6r6Yi1k&callback=initMap">
     </script>
   </body>
 </html>

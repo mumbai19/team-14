@@ -1,11 +1,3 @@
-<?php
-require_once("db.php");
-global $connection;
-?>
-
-
-
-
 <html lang="en">
 
 <head>
@@ -71,153 +63,53 @@ global $connection;
    </nav>
   
    
-   
-   
-   
    <br>
    
    <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
    
+   <br>
+<div class="container">  
 
-    <section id="tabs">
-       <div class="container-fluid" style="height: 100%; margin-top: 100px;">
-         <ul class="nav nav-tabs" id="myTab" role="tablist" style="text-decoration: none;">
-            <li class="nav-item active" >
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="padding: 10px 40px;font-size: 20px; font-weight: 500">Video</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="padding: 10px 40px;font-size: 20px; font-weight: 500">Documnets</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="padding: 10px 40px;font-size: 20px;font-weight: 500">Contact</a>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent" style="margin-top: 15px;">
-            <div class="tab-pane fade in active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="row">
-<!--
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <
--->
-                        
-                         <?php
-                            
-                           
-                        $query="Select * from video";
-                        $result=mysqli_query($connection,$query);
-                        $nu=mysqli_num_rows($result);
-//                        echo $nu;
-                        $count =0;
-                        while($count!=$nu){
-                            echo "<div class='col-md-3'>
-                        <div class='col-md-3 col-sm-4 image-hovering ' style='height:214px;width:350;margin-right:25px;margin-top:30px;'>
-                        ";
-//                            echo $row['expert_id'];
-//                            echo "<p>$row['expert_id']</p>";
-                            $count=$count+1;
-                            $row=mysqli_fetch_assoc($result);
-                            echo $row['youtube_url'];
-                            echo "</div></div>";
-                            echo "<div class='col-md-1'></div>";
-//                            break;
-                            
-                            
-                                
-                        }     
-                            
-                            
-                            
-                        ?>    
-                           
-                           
-                           
-                            
-<!--
-                            
-                        <iframe width="400" height="315" src="https://www.youtube.com/embed/lRwWfYLKFw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                       
--->
-                        
-<!--                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">-->
-<!--
-                        </div>
-                    </div>
--->
-<!--
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                       
-                       
-                        <iframe width="400" height="315" src="https://www.youtube.com/embed/lRwWfYLKFw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div>
--->
-                    
-                </div>
-            </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="margin-top: 15px;"><div class="row">
-                    <div class="col-md-3">
-                       <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                </div>
-                </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab" style="margin-top: 15px;"><div class="row">
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="col-md-3 col-sm-4 image-hovering " style="height:214px;width:350;margin-right:25px;margin-top:30px;">
-                        <img src="img/client/client-1.jpg" alt=""  class="img-responsive">
-                        </div>
-                    </div>
-                    
-                </div>
-                </div>
-        </div>
-  
-       </div>
-        
-    </section>
 
-   
-   
-   
+ <form class="text-center border border-light p-5" method="POST">
+
+    <p class="h4 mb-4">Sign in</p>
+
+	<!-- Name -->
+    <br><br>
+     <strong><lable>Title</lable></strong>
+    <input type="text" id="defaultLoginFormName" name="title" class="form-control mb-4" placeholder="Name">
+
+
+
+    <br><br>
+     <strong><lable>Step1</lable></strong>
+    <input type="text" id="defaultLoginFormName" name="step1" class="form-control mb-4" placeholder="step 1">
+    
+    <br><br>
+     <strong><lable>Step2</lable></strong>
+    <input type="text" id="defaultLoginFormName" name="step2" class="form-control mb-4" placeholder="step 2">
+     
+     <br><br>
+     <strong><lable>Step3</lable></strong>
+    <input type="text" id="defaultLoginFormName" name="step3" class="form-control mb-4" placeholder="step 3">
+    
+    <br><br>
+     <strong><lable>Step4</lable></strong>
+    <input type="text" id="defaultLoginFormName" name="step4" class="form-control mb-4" placeholder="step 4">
+
+	<div id="message"></div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-lg btn-general btn-white smooth-scroll" type="submit" name="submit">Submit</button>.
+    
+
+    <!-- Register -->
+
+
+</form>
+
+ </div>   
    
    
    
