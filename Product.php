@@ -1,4 +1,25 @@
+<?php
+$conn= mysqli_connect('localhost','root','','jaljeevika');
+if(mysqli_connect_errno())
+{
+    echo 'Failed to connect' . mysqli_connect_errno();
+}
+$query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+from product as p
+inner join type_of_user as t on p.UID=t.UID
+inner join stake_holders as st on t.UID=st.UID ";
+$res= mysqli_query($conn,$query);
+$user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+
+
+?>
+<script>
+window.addEventListener('load', function() {
+    console.log($user)
+})
+</script>
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <!--TITLE OF THE PAGE-->
@@ -39,6 +60,7 @@
   float: left;
   width: 25%;
   padding: 0 10px;
+  margin : 45px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -71,6 +93,8 @@
 </head>
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
+<br>
+<br>
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
@@ -106,20 +130,23 @@
 <br>
 <br> 
 <div class="container" >
-<div class="row">
+
+<?php
+$c=0;
+ foreach($user as $det): ?>
   <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
+  <div class="card" style="width:250px; height:450px">
+    <img class="card-img-top" src="inv_imgs/<?php echo($det['image'])?>" alt="Card image" style="width:100%;heigth:200px">
     <p>
-      <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      
+      <h4 class="card-title"><?php $c=$c+1; echo( $det['product_name'] )?></h4>
+      <p><b>Description</b>:<?php echo( $det['comments'] )?></p>
+      <p><b>Vendor name</b>:<?php echo( $det['name']) ?></p>
+      <p><b>Contact no</b>:<?php echo($det['contact'] )?></p>
       <a href="#" class="btn btn-primary">Rs 500</a>
    </p>
    <form class="rating">
         <label>
+
           <input type="radio" name="stars" value="1" />
           <span class="icon">★</span>
         </label>
@@ -150,99 +177,12 @@
           <span class="icon">★</span>
         </label>
       </form>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-      <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-   </p>
+      
   </div>
   </div>
   
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-      <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-   </p>
-  </div>
-  </div>
-  
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-    <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-   </p>
-  </div>
-</div>
-</div>
-<br>
-<div class="row">
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-    <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-</p>
-  </div>
-  </div>
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-    <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-    </p>
-  </div>
-  </div>
-  
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-    <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-   </p>
-  </div>
-  </div>
-  
-  <div class="column">
-  <div class="card" style="width:250px">
-    <img class="card-img-top" src="inv_imgs/axe.jpg" alt="Card image" style="width:100%">
-    <p>
-    <h4 class="card-title">Fish Axe</h4>
-      <p><b>Description</b>: It has high precision and is durable.</p>
-      <p><b>Vendor name</b>: Ajay More</p>
-      <p><b>Contact no</b>:992003990</p>
-      <a href="#" class="btn btn-primary">Rs 500</a>
-</p>
-  </div>
-  </div>
+ <?php endforeach; ?>
+ 
 </div>
 </div>
 <script>
