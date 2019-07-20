@@ -1,18 +1,4 @@
-<?php
-$conn= mysqli_connect('localhost','root','','jaljeevika');
-if(mysqli_connect_errno())
-{
-    echo 'Failed to connect' . mysqli_connect_errno();
-}
-$query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
-from product as p
-inner join type_of_user as t on p.UID=t.UID
-inner join stake_holders as st on t.UID=st.UID ";
-$res= mysqli_query($conn,$query);
-$user = mysqli_fetch_all($res,MYSQLI_ASSOC);
 
-
-?>
 <script>
 window.addEventListener('load', function() {
     console.log($user)
@@ -95,8 +81,11 @@ window.addEventListener('load', function() {
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
 <br>
 <br>
-<?php session_start();
+<?php
+session_start();
+ob_start();
 $name=$_SESSION['name'];
+$state=$_SESSION['state'];
 ?>
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
@@ -119,9 +108,9 @@ $name=$_SESSION['name'];
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
                        <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <button type="button" class="btn btn-default"><?php echo $name; ?></button>
+                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
            </div>
@@ -130,10 +119,61 @@ $name=$_SESSION['name'];
 <br>
 <br>
 <br>
-<br>
-<br> 
 <div class="container" >
+<div class="row justify-content-center">
+<div class="column">
+<form method="post" action="Product.php">
+<select style="padding:10px; font-size:18px;" name="filter">
+  <option value="none">None</option>
+  <option value="vicinity">Vicinity</option>
+  <option value="price">Price</option>
+  <option value="rating">Rating</option>
+</select> 
+<input type="submit" value="FILTER" name="submit" style="padding:9px; font-size:18px;">
+</div>
+</div>
+</form>
+<?php
+$conn= mysqli_connect('localhost','root','','jaljeevika');
+if(mysqli_connect_errno())
+{
+    echo 'Failed to connect' . mysqli_connect_errno();
+}
+if(isset($_POST['submit'])){
+  
+  $filter=$_POST['filter'];
+  //echo'<script>alert("'.$filter.'")</script>';
+  if ($filter!='vicinity'){
+  $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID 
+  ORDER BY '".$filter."' DESC";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+  }
+  else{
+    $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID
+  where state='$state'";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+  }
+}
+else{
+  $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+}
 
+
+
+?>
 <?php
 $c=0;
  foreach($user as $det): ?>
@@ -193,5 +233,6 @@ $c=0;
   console.log('New star rating: ' + this.value);
   });
 </script>
+
 </body>
 </html>

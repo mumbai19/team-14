@@ -47,11 +47,15 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a href="#home">Home</a></li>
+                       <li><a class="smooth-scroll" href="#home">Home</a></li>
+                       <li><a class="smooth-scroll" href="#about">Training</a></li>
+                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
+                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
+                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
+                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="">Sign Up</a></li>
-                       <li><a href="login.php">LOGIN</a></li>
+                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
                    </ul>
                </div>
            </div>
@@ -64,36 +68,31 @@
 <div class="col-md-5 mx-auto">
 <form class="text-center border border-light p-5" method="POST">
 
-    <p class="h4 mb-4">Sign Up</p>
+    <p class="h4 mb-4">Pond Quality</p>
 
 	<!-- Name -->
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond">
 
 	<!-- Username -->
     <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
 
-    <!-- Email -->
-    <input type="email" id="defaultLoginFormEmail" name="emailid" class="form-control mb-4" placeholder="E-mail">
-
-	<!-- Password -->
-    <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
-	
-	<!-- Phone Number -->
-    <input type="text" id="defaultLoginFormPhone" name="phone" class="form-control mb-4" placeholder="Phone No.">
-
-	<!-- Address -->
+    <!-- Address -->
     <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
 	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
 	<div class="form-row mb-4">
         <div class="col">
-            <!-- City -->
-            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+            <!-- Village -->
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village">
         </div>
+        <div class="col">
         <div class="col">
             <!-- District -->
             <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
         </div>
     </div>
+            <!-- City -->
+            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+        </div>
 	<div class="form-row mb-4">
 		<div class="col">
             <!-- State -->
@@ -104,39 +103,35 @@
             <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
         </div>
     </div>
-
-
-	Login As :<br>
-	<div class="form-row mb-4">
-		<div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-			<label class="custom-control-label" for="defaultUnchecked">Fisherman</label>
-			</div>
-        </div>
-        <div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-			<label class="custom-control-label" for="defaultChecked">Expert</label>
-			</div>
+	<div class="col">
+            <!-- pH Value -->
+            <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond">
         </div>
     </div>
-	<div class="form-row mb-4">
-		<div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
-			<label class="custom-control-label" for="defaultUnchecked">Vendor</label>
-			</div>
-        </div>
-        <div class="col">
-			<div class="custom-control custom-radio">
-			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
-			<label class="custom-control-label" for="defaultChecked">Pond Owner</label>
-			</div>
+	<div class="col">
+            <!-- size -->
+            <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size">
         </div>
     </div>
-	
-	<div id="message"></div>
+    <div class="col">
+            <!-- Dissolved O2 Levels -->
+            <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels">
+        </div>
+    </div>
+    <div class="col">
+            <!-- Pond Depth -->
+            <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth">
+        </div>
+    </div>
+    <div class="col">
+            <!-- Total Dissolved Solutes -->
+            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes">
+        </div>
+    </div>
+
+
+
+
 
     <!-- Sign in button -->
     <button class="btn btn-info btn-block my-4" type="submit" name="submit">Register</button>
