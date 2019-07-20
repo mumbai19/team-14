@@ -85,11 +85,11 @@
             <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village">
         </div>
         <div class="col">
+        <div class="col">
             <!-- District -->
             <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
         </div>
-    	
-        <div class="col">
+    </div>
             <!-- City -->
             <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
         </div>
@@ -102,27 +102,30 @@
             <!-- District -->
             <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
         </div>
-    
+    </div>
 	<div class="col">
             <!-- pH Value -->
             <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond">
         </div>
+    </div>
 	<div class="col">
             <!-- size -->
             <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size">
         </div>
+    </div>
     <div class="col">
             <!-- Dissolved O2 Levels -->
             <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels">
         </div>
+    </div>
     <div class="col">
             <!-- Pond Depth -->
             <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth">
         </div>
+    </div>
     <div class="col">
             <!-- Total Dissolved Solutes -->
             <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes">
-        </div>
         </div>
     </div>
 
