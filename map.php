@@ -7,15 +7,15 @@ $node = $doc->create_element("markers");
 $parnode = $doc->append_child($node);
 
 // Opens a connection to a MySQL server
-$conn=mysql_connect('localhost', root, "");
+$conn=mysql_connect('localhost', root, " ");
 if (!$conn) {
-  die('Not connected : ' . mysql_error());
+  die('Not connected : '. mysql_error());
 }
 
 // Set the active MySQL database
 $db_selected = mysql_select_db('jaljeevika', $conn);
 if (!$db_selected) {
-  die ('Can\'t use db : ' . mysql_error());
+  die ('Can\'t use db : '. mysql_error());
 }
 
 // Select all the rows in the markers table
@@ -27,7 +27,7 @@ $result = mysql_query($query);
   </script>
 <?php
 if (!$result) {
-  die('Invalid query: ' . mysql_error());
+  die('Invalid query: '. mysql_error());
   
 }
 
