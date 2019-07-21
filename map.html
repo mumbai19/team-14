@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -7,7 +7,8 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 500px;
+        width:100%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -17,8 +18,6 @@
       }
     </style>
   </head>
-
-<html>
   <body>
     <div id="map"></div>
 
@@ -42,7 +41,9 @@
 
           // Change this depending on the name of your PHP or XML file
           downloadUrl('map.php', function(data) {
+            
             var xml = data.responseXML;
+            console.log(xml);
             var markers = xml.documentElement.getElementsByTagName('marker');
             Array.prototype.forEach.call(markers, function(markerElem) {
               var id = markerElem.getAttribute('marker_id');
@@ -97,7 +98,7 @@
       function doNothing() {}
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjwoAj3MDp2Slhr7iuRICFKEYW6r6Yi1k&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWos4XoVrBM-X2bZImcZb4Sg9kvURclgw&callback=initMap">
     </script>
   </body>
 </html>

@@ -51,6 +51,7 @@
                        <li><a  href="Product.php">Inventory</a></li>
                        <li><a  href="#clients">Sign Up</a></li>
                        <li><a  href="#contact">Contact</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
