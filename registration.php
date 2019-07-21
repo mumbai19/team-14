@@ -4,12 +4,9 @@
 
     <!--TITLE OF THE PAGE-->
     <title>Jaljeevika</title>
-
-<!--    <link rel="shortcut icon" href="img/icon.jpg">-->
-
+    <link rel="shortcut icon" href="img/icon.jpg">
     <!--Fontawesome 4.7.0-->
     <link rel="stylesheet" href="vendors/fontawesome/css/font-awesome.min.css">
-
     <!--Fonts Used-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
     
@@ -18,18 +15,20 @@
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <!-- end of core plugin css-->
     
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="vendors/animate/animate.css">
+    <!--END OF ANIMATE CSS-->
     
+    <!--MAGNIFY CSS-->
+    <link rel="stylesheet" href="vendors/magnify/magnific-popup.css">
     
     <!--Costom Styling css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- End of Costom Styling css-->
 </head>
-
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
-  
-
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -44,91 +43,104 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a href="index.php">Home</a></li>
-                       <li><a  href="training_page.php">Training</a></li>
-                       <li><a  href="pond.php">Ponds</a></li>
-                       <li><a  href="#testimonials">Schemes</a></li>
-                       <li><a  href="Product.php">Inventory</a></li>
-                       <li><a  href="#clients">Sign Up</a></li>
-                       <li><a  href="#contact">Contact</a></li>
-                       <li><a  href="Chart.php">Visual Charts</a></li>
-                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
+                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
+                       <li><a class="smooth-scroll" href="training_page.php">Training</a></li>
+                       <li><a class="smooth-scroll" href="ponddisplay.php">Ponds</a></li>
+                       <li><a class="smooth-scroll" href="Information.php">Schemes</a></li>
+                       
+                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a class="" href="login.php">LOGIN</a></li>
                    </ul>
                </div>
            </div>
        </div>
    </nav>
-  
-   
-   <br>
-   
-   <br>
-   
-   <br>
-   
-   <br>
-   
-   <br>
-<div class="container">  
-
-   
-
-
-<div style="font-color:black; border:3px solid #34C6D3;" >
- <form class="text-center border border-light p-2" method="POST" action="multilingual.php" >
-
-    <p class="h4 mb-4">Sign in</p>
-
+<br><br><br><br><br><br>
+<div class="container">
+<!-- Default form login -->
+<div class="col-md-5 mx-auto" style="border:3px solid #34C6D3; margin-left:320px">
+<form class="text-center border border-light p-5" method="POST">
+    <p class="h4 mb-4">Sign Up</p>
 	<!-- Name -->
-    <br><br>
-     <strong><lable>Title</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="title" class="form-control mb-4" placeholder="Name" style="color:black;">
-
-
-
-    <br><br>
-     <strong><lable>Step1</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step1" class="form-control mb-4" placeholder="step 1" style="color:black;">
-    
-    <br><br>
-     <strong><lable>Step2</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step2" class="form-control mb-4" placeholder="step 2" style="color:black;">
-     
-     <br><br>
-     <strong><lable>Step3</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step3" class="form-control mb-4" placeholder="step 3" style="color:black;">
-    
-    <br><br>
-     <strong><lable>Step4</lable></strong>
-    <input type="text" id="defaultLoginFormName" name="step4" class="form-control mb-4" placeholder="step 4" style="color:black;">
-
+    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name">
+	<!-- Username -->
+    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
+    <!-- Email -->
+    <input type="email" id="defaultLoginFormEmail" name="emailid" class="form-control mb-4" placeholder="E-mail">
+	<!-- Password -->
+    <input type="password" id="defaultLoginFormPassword" name="password" class="form-control mb-4" placeholder="Password">
+	
+	<!-- Phone Number -->
+    <input type="text" id="defaultLoginFormPhone" name="phone" class="form-control mb-4" placeholder="Phone No.">
+	<!-- Address -->
+    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
+	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
+	<div class="form-row mb-4">
+        <div class="col">
+            <!-- City -->
+            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+        </div>
+        <div class="col">
+            <!-- District -->
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
+        </div>
+    </div>
+	<div class="form-row mb-4">
+		<div class="col">
+            <!-- State -->
+            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State">
+        </div>
+        <div class="col">
+            <!-- District -->
+            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
+        </div>
+    </div>
+	Login As :<br>
+	<div class="form-row mb-4">
+		<div class="col">
+			<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+			<label class="custom-control-label" for="defaultUnchecked">Fisherman</label>
+			</div>
+        </div>
+        <div class="col">
+			<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+			<label class="custom-control-label" for="defaultChecked">Expert</label>
+			</div>
+        </div>
+    </div>
+	<div class="form-row mb-4">
+		<div class="col">
+			<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+			<label class="custom-control-label" for="defaultUnchecked">Vendor</label>
+			</div>
+        </div>
+        <div class="col">
+			<div class="custom-control custom-radio">
+			<input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+			<label class="custom-control-label" for="defaultChecked">Pond Owner</label>
+			</div>
+        </div>
+    </div>
+	
 	<div id="message"></div>
-
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit" name="submit">Register</button>
+    <!-- Register -->
+    <p>Already have an account?
+        <a href="login.php">Sign In</a>
+    </p>
+</form>
+</div>
+<!-- Default form login -->
+</div>
+ 
    
   
-
-   
-   
-   
-    <!-- Sign in button -->
-    <button class="btn btn-lg btn-general btn-white smooth-scroll" type="submit" name="submit">Submit</button>.
-    
-
-    <!-- Register -->
-
-
-</form>
- 
-
- </div>   
-    </div> 
-
-   
-   <br><br>
-   
-    
-    
-          <footer id="contact">
+          <!--END OF STATS SECTION-->
+       <footer id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -193,11 +205,12 @@ India – 416405
                             <p class="copyright">Copyrights @ White Graphics, 2018</p>
                         </div><!--.col-md-6-->
                         <div class="col-md-6 links hidden-sm hidden-xs">
-                            <a href="#home" class="bottom-links">Home </a><span>/ </span>
-                            <a href="training_home.php" class="bottom-links"> Training</a><span>/ </span>
-                            <a href="pond.php" class="bottom-links">Ponds</a><span>/ </span>
+                            <a href="#" class="bottom-links">Home </a><span>/ </span>
+                            <a href="#" class="bottom-links"> Training</a><span>/ </span>
+                            <a href="#" class="bottom-links">Ponds</a><span>/ </span>
                             <a href="#" class="bottom-links">Schemes </a><span>/ </span>
-                            <a href="Product.php" class="bottom-links">Inventory</a><span>/ </span>
+                            <a href="#" class="bottom-links">Seeds </a><span>/ </span>
+                            <a href="#" class="bottom-links">Fishes </a><span>/ </span>
                         </div><!--.col-md-6-->
                     </div><!--.row-->
             </div><!--copyrights-->
@@ -211,30 +224,23 @@ India – 416405
     <!--CORE JS-->
     
     <!--jQuery Script-->
-    
- 
-    
-    
-<!--    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>-->
+    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
     <!--Bootstrap Script-->
-<!--    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>-->
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     
     <!--wow.js-->
 
     <!--COUNTERUP-->
-<!--
     <script src="vendors/waypoints/jquery.waypoints.min.js"></script>
     <script src="vendors/counterup/jquery.counterup.min.js"></script>
     
--->
     <!--Easing-->
-<!--    <script src="vendors/easing/easing.js"></script>-->
-    
+    <script src="vendors/easing/easing.js"></script>
     
     <!--END OF CORE JS-->
     
     <!--CUSTOM JS-->
-<!--    <script src="js/script.js"></script>-->
+    <script src="js/script.js"></script>
     <!--END OF CUSTOM JS-->
     
     <!--SCRIPTS ENDS HERE-->
