@@ -133,37 +133,37 @@
 	<br>
 	
        
-            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village" style="color:black">
+            <input type="text" id="defaultRegisterFormDistrict" name="village" class="form-control" placeholder="Village" style="color:black">
         <br>
             <!-- District -->
-            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District" style="color:black">
+            <input type="text" id="defaultRegisterFormDistrict" name="district" class="form-control" placeholder="District" style="color:black">
             
         <br>
    
             <!-- City -->
-            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City" style="color:black">
+            <input type="text" id="defaultRegisterFormCity" name="city" class="form-control" placeholder="City" style="color:black">
        <br>
 		
-            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State" style="color:black">
+            <input type="text" id="defaultRegisterFormState" name="state" class="form-control" placeholder="State" style="color:black">
         <br>
             <!-- District -->
-            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode" style="color:black">
+            <input type="text" id="defaultRegisterFormPincode" name="pincode" class="form-control" placeholder="Pincode" style="color:black">
         
     
             <!-- pH Value -->
-            <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond" style="color:black">
+            <input type="text" id="defaultRegisterFormpHvalue" name="ph" class="form-control" placeholder="pH Value of Pond" style="color:black">
     
             <!-- size -->
-            <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size" style="color:black">
+            <input type="text" id="defaultRegisterFormpondSize" name="pond_size" class="form-control" placeholder="Pond Size" style="color:black">
 
             <!-- Dissolved O2 Levels -->
-            <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels" style="color:black">
+            <input type="text" id="defaultRegisterFormDissolvedO2Levels" name="o2" class="form-control" placeholder="Dissolved O2 Levels" style="color:black">
     
             <!-- Pond Depth -->
-            <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth" style="color:black">
+            <input type="text" id="defaultRegisterPonddepth" name="depth" class="form-control" placeholder="Pond Depth" style="color:black">
     
             <!-- Total Dissolved Solutes -->
-            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes" style="color:black">
+            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" name="dissolved_solutes" class="form-control" placeholder="Total Dissolved Solutes" style="color:black">
    
     <!-- Sign in button -->
     <button class="btn btn-info btn-block my-4" type="submit" name="submit" id="button_submit">Check</button>

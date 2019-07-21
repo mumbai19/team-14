@@ -132,7 +132,8 @@ $state=$_SESSION['state']='Tamil Nadu';
   <option value="none">None</option>
   <option value="vicinity">Vicinity</option>
   <option value="price">Price</option>
-  <option value="rating">Rating</option>
+  <option value="Fishing Net">Fishing Net</option>
+  
 </select> 
 <input type="submit" value="FILTER" name="submit" style="padding:9px; font-size:18px;">
 </div>
@@ -175,6 +176,16 @@ else{
   $res= mysqli_query($conn,$query);
   $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
+    if($filter=='Fishing Net')
+    {
+        $query= "SELECT DISTINCT p.product_id,p.product_type,p.product_name,p.price,p.comments,p.image,st.name,st.contact
+  from product as p
+  inner join type_of_user as t on p.UID=t.UID
+  inner join stake_holders as st on t.UID=st.UID
+ where p.product_name='Fishing Net'";
+  $res= mysqli_query($conn,$query);
+  $user = mysqli_fetch_all($res,MYSQLI_ASSOC);
+    }
 
 
 
