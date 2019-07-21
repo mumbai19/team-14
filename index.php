@@ -96,10 +96,10 @@
                             <i class="fa fa-paint-brush fa-3x"></i>
                         </div>
                         <div class="service-item-title">
-                           <h3 class="text-heading">Web Design</h3> 
+                           <h3 class="text-heading">Fisherman</h3> 
                         </div> 
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Fisherman from rural location</p>
                          </div>
                      </div>
                    </div>
@@ -109,10 +109,10 @@
                             <i class="fa fa-laptop fa-3x"></i>
                         </div> 
                         <div class="service-item-title">
-                           <h3 class="text-heading">Web Development</h3> 
+                           <h3 class="text-heading">Website</h3> 
                         </div> 
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>A proper platform for communication</p>
                         </div>
                      </div>
                    </div>
@@ -127,7 +127,7 @@
                            <h3 class="text-heading">Mobile App</h3> 
                         </div> <!--.service-item-title-->
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Mobile friendly site</p>
                         </div><!--.service-item-desc-->
                      </div><!--.service-item--> 
                    </div><!--.col-md-4-->
@@ -139,10 +139,10 @@
                             <i class="fa fa-search fa-3x"></i>
                         </div><!--.service-item-icon--> 
                         <div class="service-item-title">
-                           <h3 class="text-heading">Seo</h3> 
+                           <h3 class="text-heading">Location</h3> 
                         </div> <!--.service-item-title-->
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Can contact localtion specific fisherman</p>
                         </div><!--.service-item-desc-->
                      </div><!--.service-item--> 
                    </div><!--.col-md-4-->
@@ -157,7 +157,7 @@
                            <h3 class="text-heading">Ux Design</h3> 
                         </div> <!--.service-item-title-->
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>User Friendly</p>
                         </div><!--.service-item-desc-->
                      </div><!--.service-item--> 
                    </div><!--.col-md-4-->
@@ -172,7 +172,7 @@
                            <h3 class="text-heading">Support</h3> 
                         </div> <!--.service-item-title-->
                         <div class="service-item-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Can contact each other easliy</p>
                         </div><!--.service-item-desc-->
                      </div><!--.service-item--> 
                    </div><!--.col-md-4-->
@@ -202,7 +202,7 @@
                      <div class="stats-item">
                          <i class="fa fa-cloud-download fa-5x"></i>
                          <h2><span class="counter">1590</span>+</h2>
-                         <p>Downloads</p>
+                         <p>Fisherman</p>
                      </div>
                  </div> 
                  
@@ -210,7 +210,7 @@
                      <div class="stats-item">
                          <i class="fa fa-star-o fa-5x"></i>
                          <h2><span class="counter">3500</span>+</h2>
-                         <p>Awards</p>
+                         <p>Vendors</p>
                      </div>
                  </div>  
                  
@@ -218,7 +218,7 @@
                      <div class="stats-item">
                          <i class="fa fa-heart-o fa-5x"></i>
                          <h2><span class="counter">1199</span>+</h2>
-                         <p>Likes</p>
+                         <p>Fishes</p>
                      </div>
                  </div>  
                  
@@ -226,7 +226,7 @@
                      <div class="stats-item">
                          <i class="fa fa-check fa-5x"></i>
                          <h2><span class="counter">2200</span>+</h2>
-                         <p>Recommended</p>
+                         <p>Seeds</p>
                      </div>
                  </div>   
                </div><!--.row-->
