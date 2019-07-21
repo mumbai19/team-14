@@ -70,7 +70,7 @@
 
 <br><br><br>
 <div class="container">
-<div class="col-md-9 mx-auto">
+<div class="col-md-9 mx-auto" style="border:3px solid #34C6D3;">
 <form class="text-center border border-light p-5" method="POST" action="" style="margin-left:200px">
 
     <p class="h4 mb-4">Sign in</p>

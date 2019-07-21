@@ -63,71 +63,60 @@
    </nav>
 
 <br><br><br><br><br><br>
-<div class="container">
+<div class="container" >
 <!-- Default form login -->
-<div class="col-md-5 mx-auto">
-<form class="text-center border border-light p-5" method="POST">
+<div class="col-md-5 mx-auto" style="margin-left:300px;border: 3px solid #34C6D3;">
+
+
+<form class="text-center border border-light p-5" method="POST" >
 
     <p class="h4 mb-4">Pond Quality</p>
 
 	<!-- Name -->
     <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond">
-
+    <br>
 	<!-- Username -->
     <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
-
+    <br>
     <!-- Address -->
     <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
+    <br>
 	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
-	<div class="form-row mb-4">
-        <div class="col">
-            <!-- Village -->
+	<br>
+	
+       
             <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village">
-        </div>
-        <div class="col">
-        <div class="col">
+        <br>
             <!-- District -->
             <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
-        </div>
-    </div>
+            
+        <br>
+   
             <!-- City -->
             <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
-        </div>
-	<div class="form-row mb-4">
-		<div class="col">
-            <!-- State -->
+       <br>
+		
             <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State">
-        </div>
-        <div class="col">
+        <br>
             <!-- District -->
             <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
-        </div>
-    </div>
-	<div class="col">
+        
+    
             <!-- pH Value -->
             <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond">
-        </div>
-    </div>
-	<div class="col">
+    
             <!-- size -->
             <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size">
-        </div>
-    </div>
-    <div class="col">
+
             <!-- Dissolved O2 Levels -->
             <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels">
-        </div>
-    </div>
-    <div class="col">
+    
             <!-- Pond Depth -->
             <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth">
-        </div>
-    </div>
-    <div class="col">
+    
             <!-- Total Dissolved Solutes -->
             <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes">
-        </div>
-    </div>
+   
 
 
 
