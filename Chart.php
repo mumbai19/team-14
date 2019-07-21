@@ -26,7 +26,14 @@ $dataPoints = array(
     <br>
     <br>
     <br>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+<div id="chartContainer" style="margin-left:100px; height: 370px; width: 80%"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
          
 
@@ -87,6 +94,9 @@ chart.render();
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
+   
+   
+   
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -101,10 +111,21 @@ chart.render();
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="training_page.php">Training</a></li>
+                       <li><a class="smooth-scrol" href="pond.php">Ponds</a></li>
+                       <li><a  href="sell.php">Sell</a></li>
+                       <li><a class="smooth-scroll" href="Product.php">Inventory</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="map.html">Maps</a></li>
                        
+                       <li><a  href="Chart.php">Visual Charts</a></li>
+                       <button type="button" class="btn btn-default"><?php $_SESSION['name']='Fujusika'; ?></button>
+                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
+                   </ul>
                </div>
            </div>
        </div>

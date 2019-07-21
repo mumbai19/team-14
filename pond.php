@@ -45,6 +45,7 @@
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
+   
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -59,21 +60,27 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a  href="#home">Home</a></li>
-                       <li><a  href="training_home.php">Training</a></li>
-                       <li><a href="#work">Ponds</a></li>
-                       <li><a  href="#testimonials">Schemes</a></li>
-                       <li><a  href="Product.php">Inventory</a></li>
-                       <li><a  href="#contact">Contact</a></li>
-                       <li><a  href="Chart.php">Visual Charts</a></li>
-                       <button type="button" class="btn btn-default"><a href="logout.php">Logout</a></button>
+
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="training_page.php">Training</a></li>
+                       <li><a class="smooth-scrol" href="pond.php">Ponds</a></li>
+                       <li><a  href="sell.php">Sell</a></li>
+                       <li><a class="smooth-scrol" href="Product.php">Inventory</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="map.html">Maps</a></li>
                        
+                       <li><a  href="Chart.php">Visual Charts</a></li>
+                       <button type="button" class="btn btn-default"><?php $_SESSION['name']='Fujusika'; ?></button>
+                       <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
            </div>
        </div>
    </nav>
-
+   
+   
 <br><br><br><br><br><br>
 
 <script type="text/javascript">
@@ -109,7 +116,7 @@
 <div class="col-md-5 mx-auto" style="margin-left:300px;border: 3px solid #34C6D3;">
 
 
-<form class="text-center border border-light p-5" method="POST" onsubmit="github(event)" id="form2" enctype="multipart/form-data">
+<form class="text-center border border-light p-5" onsubmit="github(event)" id="form2" enctype="multipart/form-data">
 
     <p class="h4 mb-4">Pond Quality</p>
 

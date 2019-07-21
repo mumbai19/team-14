@@ -107,10 +107,12 @@ $state=$_SESSION['state']='Tamil Nadu';
                     
                        <li><a class="smooth-scrol" href="index.php">Home</a></li>
                        <li><a class="smooth-scrol" href="training_page.php">Training</a></li>
-                       <li><a class="smooth-scroll" href="pond.php">Ponds</a></li>
-                       <li><a  href="information.php">Schemes</a></li>
+                       <li><a class="smooth-scrol" href="pond.php">Ponds</a></li>
+                       <li><a  href="sell.php">Sell</a></li>
                        <li><a class="smooth-scroll" href="Product.php">Inventory</a></li>
                        <li><a class="smooth-scrol" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="map.html">Maps</a></li>
+                       
                        <li><a  href="Chart.php">Visual Charts</a></li>
                        <button type="button" class="btn btn-default"><?php $_SESSION['name']='Fujusika'; ?></button>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>

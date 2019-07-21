@@ -49,6 +49,8 @@
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
    <div>
+   
+   
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -72,9 +74,9 @@
 
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
-                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="Information.php">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="Information.php">Schemes</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
                        <li><a href="registration.php">Sign Up</a></li>
                        <li><a href="login.php">LOGIN</a></li>
                    </ul>
@@ -82,6 +84,9 @@
            </div>
        </div>
    </nav>
+   
+   
+   
 </div>
 <!-- <body style="background-image:url('img/schemes.jpg');  background-repeat: no-repeat;  background-size: cover;"> -->
 <div style="top=30px;position:relative;background-color:afeeee" class="jumbotron text-center"><br>
