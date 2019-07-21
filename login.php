@@ -69,9 +69,9 @@
 <br><br><br><br><br><br>
 
 <br><br><br>
-<div class="container">
+<div class="container" style="margin-left:330px">
 <div class="col-md-9 mx-auto" style="border:3px solid #34C6D3;">
-<form class="text-center border border-light p-5" method="POST" action="" style="margin-left:200px">
+<form class="text-center border border-light p-5" method="POST" action="" style="margin-left:300px style=border:3px solid #34C6D3;">
 
     <p class="h4 mb-4">Sign in</p>
 
@@ -92,21 +92,22 @@
     </p>
 
 </form>
-
-
 <br>
 
-<br>
 
-<br>
-    
-<br>
-    
-<br>
 </div>
+<br>
+    
+<br>
+    
+<br>
 </div>
  
-
+<br>
+ 
+<br>
+ 
+<br> 
   
        <footer id="contact">
         <div class="container">
