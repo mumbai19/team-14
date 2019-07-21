@@ -28,9 +28,40 @@
     <!--Costom Styling css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- End of Costom Styling css-->
     
     <style>
+
+         /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background:yellow;
+  color: white;
+}
+
  
     </style>
 </head>
@@ -70,6 +101,11 @@
            </div>
        </div>
    </nav>
+
+   <div class="icon-bar">
+  <a href="chatbot/index.html" class="facebook"><i class="fa fa-comment"></i></a>
+  
+</div>
    <!--HOME SECTION-->
    <section id="home" class="home-section">
        <div class="home-cover bg-parallax wow animated fadeIn">
