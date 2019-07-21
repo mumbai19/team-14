@@ -59,15 +59,15 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a  href="#home">Home</a></li>
+                       <li><a  href="training_home.php">Training</a></li>
+                       <li><a href="#work">Ponds</a></li>
+                       <li><a  href="#testimonials">Schemes</a></li>
+                       <li><a  href="Product.php">Inventory</a></li>
+                       <li><a  href="#contact">Contact</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
+                       <button type="button" class="btn btn-default"><a href="logout.php">Logout</a></button>
+                       
                    </ul>
                </div>
            </div>
@@ -163,11 +163,60 @@
             <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" name="dissolved_solutes" class="form-control" placeholder="Total Dissolved Solutes" style="color: black;">
         </div>
     </div>
+<div class="container" >
+<!-- Default form login -->
+<div class="col-md-5 mx-auto" style="margin-left:300px;border: 3px solid #34C6D3;">
 
 
+<form class="text-center border border-light p-5" method="POST" >
 
+    <p class="h4 mb-4">Pond Quality</p>
 
+	<!-- Name -->
+    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond">
+    <br>
+	<!-- Username -->
+    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
+    <br>
+    <!-- Address -->
+    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
+    <br>
+	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
+	<br>
+	
+       
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village">
+        <br>
+            <!-- District -->
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
+            
+        <br>
+   
+            <!-- City -->
+            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+       <br>
+		
+            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State">
+        <br>
+            <!-- District -->
+            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
+        
+    
+            <!-- pH Value -->
+            <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond">
+    
+            <!-- size -->
+            <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size">
 
+            <!-- Dissolved O2 Levels -->
+            <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels">
+    
+            <!-- Pond Depth -->
+            <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth">
+    
+            <!-- Total Dissolved Solutes -->
+            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes">
+   
     <!-- Sign in button -->
     <button class="btn btn-info btn-block my-4" type="submit" name="submit" id="button_submit">Check</button>
 

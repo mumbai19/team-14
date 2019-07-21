@@ -67,9 +67,11 @@
    </nav>
 
 <br><br><br><br><br><br>
+
+<br><br><br>
 <div class="container">
-<div class="col-md-5 mx-auto">
-<form class="text-center border border-light p-5" method="POST" action="">
+<div class="col-md-9 mx-auto" style="border:3px solid #34C6D3;">
+<form class="text-center border border-light p-5" method="POST" action="" style="margin-left:200px">
 
     <p class="h4 mb-4">Sign in</p>
 
@@ -82,7 +84,7 @@
 	<div id="message"></div>
 
     <!-- Sign in button -->
-    <input class="btn btn-info btn-block my-4" type="submit" name="submit" value="Sign In">Sign in
+    <input class="btn btn-info btn-block my-4" type="submit" name="submit" value="Sign In">
 
     <!-- Register -->
     <p>Not a member?
@@ -90,6 +92,17 @@
     </p>
 
 </form>
+
+
+<br>
+
+<br>
+
+<br>
+    
+<br>
+    
+<br>
 </div>
 </div>
  

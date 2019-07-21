@@ -1,12 +1,25 @@
-r
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+  #mydiv {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+  </script>
+</head>
+<title>Jaljeevika</title>
 
-    <!--TITLE OF THE PAGE-->
-    <title>Jaljeevika</title>
-
-    <link rel="shortcut icon" href="img/icon.jpg">
+<!--    <link rel="shortcut icon" href="img/icon.jpg">-->
 
     <!--Fontawesome 4.7.0-->
     <link rel="stylesheet" href="vendors/fontawesome/css/font-awesome.min.css">
@@ -32,10 +45,9 @@ r
     <!-- End of Costom Styling css-->
 </head>
 
-
-
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
+   <div>
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -59,109 +71,157 @@ r
                        <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                        <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
-                       <li><a  href="Chart.php">Visual Charts</a></li>
                    </ul>
                </div>
            </div>
        </div>
    </nav>
-
-<br><br><br><br><br><br>
-
-<?php
-  $servername = "127.0.0.1";
-  $username = "root";
-  $password = "";
-  $dbname = "jaljeevika";
-
-  $conn = new mysqli($servername, $username, $password, $dbname);
-
-  if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-  }
-  #$id = $_REQUEST['id'] ;
-  $id=7;
-  $sql = "SELECT * from pond_details where UID = '".$id."'";
- $result = $conn->query($sql);
-if($result->num_rows > 0) {
-  $row = $result->fetch_assoc();}
-?>
-
-<div style="display:inline-block; font-size:20px;" class="container">
-<!-- Default form login -->
-<div style="text-align: center;" class="clo-md-5 mx-auto">
-
-<form class="text-center border border-light p-5" method="POST" action="" enctype="multipart/form-data">
-
-    <p class="h4 mb-4"><h2>Pond Details</h2></p>
-
-  <!-- Name -->
-  <div class="row">
-  <label> Name: </label>
-   <?php echo  $row['pond_name'] ;?> 
- </div>
-
- <div class="row">
-  <label> Address: </label>
-  <?php echo  $row['add_line1'] ." ". $row['add_line2'] ." ". $row['village'] ." ". $row['city'] ." ". $row['pincode'];?>
 </div>
-  <div class="form-row mb-4">
-        
-              <label> State: </label>
-              <?php echo  $row['state'] ;?> 
-      
-        <div class="col">
-              <label> pH: </label>
-              <?php echo  $row['ph'] ;?> 
-        </div>
-      
-        <div class="col">
-              <label> Pond Size: </label>
-             <?php echo  $row['pond_size'] ;?> 
-        </div>
-        <div class="col">
-              <label> Dissolved O2: </label>
-             <?php echo  $row['dissolved_o2'] ;?> 
-        </div>
-        <div class="col">
-              <label> Pond Depth: </label>
-             <?php echo  $row['pond_depth'] ;?> 
-        </div>
-        <div class="col">
-              <label> Total Dissolved Solutes: </label>
-             <?php echo  $row['total_dissolved_solutes'] ;?> 
-        </div>
-  </div>
-</form>
+<!-- <body style="background-image:url('img/schemes.jpg');  background-repeat: no-repeat;  background-size: cover;"> -->
+<div style="top=30px;position:relative;background-color:afeeee" class="jumbotron text-center"><br>
+    <h1 style="top=100px;position:relative;font-family:sans-serif" class="display-4">Schemes</h1>
+</div>
+<div style="text-align: center">
+   
+<div style="display:inline-block" class='row'>
+<button style="width:500px" data-toggle="collapse" data-target="#demo5">CENTRALLY SPONSORED PLAN SCHEMES</button>
+
+<div id="demo5" class="collapse">
+<table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Development of Marine fisheries infrastructure & post-harvest operation</td>
+      </tr>
+      <tr>
+        <td>National scheme for Welfare for Fishermen</td>
+      </tr>
+      <tr>
+        <td>Development of Inland Fisheries & Aquaculture </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 </div>
-    
 
- 
-  
-       <footer id="contact">
+<br>
+<div style="display:inline-block" class='row'>
+<button style="width:500px" data-toggle="collapse" data-target="#demo4">STATE PLAN SCHEMES (100% State assistance) </button>
+
+<div id="demo4" class="collapse">
+<table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Infrastructure improvement</td>
+      </tr>
+      <tr>
+        <td>Mastyajibi Unnayan Yojana</td>
+      </tr>
+      <tr>
+        <td>Contribution towards NFDB assistance</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<br>
+<div style="display:inline-block" class='row'>
+<button style="width:500px" data-toggle="collapse" data-target="#demo3">Central Assistance from outside Budget</button>
+
+<div id="demo3" class="collapse">
+<table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Intensive Coastal Zone Management Project (ICZMP)
+ </td>
+      </tr>
+      <tr>
+        <td>Orissa Community Tank Management Project (OCTMP)  </td>
+      </tr>
+      <tr>
+        <td>National Fisheries Development Board (NFDB) </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<br>
+<div style="display:inline-block" class='row'>
+<button style="width:500px" data-toggle="collapse" data-target="#demo2">RIDF (20% state share : 80% NABARD)</button>
+
+<div id="demo2" class="collapse">
+<table class="table table-hover">
+    <tbody>
+      <tr>
+        <td> Aquaculture development through integrated approach in Rayagada district under NMPS
+ </td>
+      </tr>
+      <tr>
+        <td> Assistance to fishermen for livelihood development for marine & Chilika fishermen </td>
+      </tr>
+      <tr>
+        <td>Replacement of breeders & management of fish seed farm</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<br>
+
+<div style="display:inline-block" class='row'>
+
+<button style="width:500px" data-toggle="collapse" data-target="#demo1">MUY (Mastyajibi Unnayan Yojana)</button>
+
+<div id="demo1" class="collapse">
+<table class="table table-hover">
+    <tbody>
+      <tr>
+        <td>Replacement of wooden country craft with FRP boat for marine fishermen under RKVY
+   </td>
+      </tr>
+      <tr>
+        <td> Motorization of country craft for marine fishermen</td>
+      </tr>
+      <tr>
+        <td> Demonstration of cage culture in reservoirs under RKVY</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+<br><br>
+
+</div>
+
+<footer id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="contact-left">
                       <h3>Jaljeevika</h3>
-                      <p>We believe in <strong>Simple</strong> , <strong>Clean</strong> &amp; <strong>Modern</strong> Design Standards with Responsive Approach. Browse the amazing work of our company.</p> 
+                      <p>We at Jaljeevika bring <strong>Science</strong> and <strong>Farmer</strong> together amd work tpwards promotion of aquatic livelyhood</p> 
                       <div class="contact-info">
                           <address>
-                              <strong>Headquaters:</strong>
-                              <p>313, Evergreen CHS.<br>
-                              Airoli Sector 15,<br>
-                              New Bombay,<br>
-                              Mumbai - 55.
+                            
+
+
+Sangli, Maharashtra,
+India – 416405
+
+
+                              <p> C/O Payod,<br>
+                              976, A/P Hingangaon,<br>
+                              Tal: K.Mahankal;<br>
+                              Sangli, Maharashtra,<br>
+                            India – 416405
+
                               </p>
                           </address>
                           <div class="phone-fax-email">
                              <p>
-                              <strong>Phone:</strong> <span>(719)-778-8804</span>
+                              <strong>Phone:</strong> <span>8600043905</span>
                               <br/>
-                              <strong>Fax:</strong> <span>(719)-778-8804 8890</span>
-                              <br/>
-                              <strong>Email:</strong> <span>info@whitegrapphics.in</span>
+
+                              <strong>Email:</strong> <span>aquatic.livelihood@gmail.com</span>
                               <br/> 
                               </p>
                           </div>
@@ -198,46 +258,17 @@ if($result->num_rows > 0) {
                         </div><!--.col-md-6-->
                         <div class="col-md-6 links hidden-sm hidden-xs">
                             <a href="#" class="bottom-links">Home </a><span>/ </span>
-                            <a href="#" class="bottom-links">Services </a><span>/ </span>
-                            <a href="#" class="bottom-links">About </a><span>/ </span>
-                            <a href="#" class="bottom-links">Work </a><span>/ </span>
-                            <a href="#" class="bottom-links">Team </a><span>/ </span>
-                            <a href="#" class="bottom-links">Pricing </a><span>/ </span>
-                            <a href="#" class="bottom-links">Clients </a>
+                            <a href="#" class="bottom-links"> Training</a><span>/ </span>
+                            <a href="#" class="bottom-links">Ponds</a><span>/ </span>
+                            <a href="#" class="bottom-links">Schemes </a><span>/ </span>
+                            <a href="#" class="bottom-links">Seeds </a><span>/ </span>
+                            <a href="#" class="bottom-links">Fishes </a><span>/ </span>
                         </div><!--.col-md-6-->
                     </div><!--.row-->
             </div><!--copyrights-->
         
         <a href="#home" class="smooth-scroll btn btn-am btn-blue btn-back-to-top hidden-xs hidden-sm" title="home" role="button"><i class="fa fa-angle-up"></i></a>
     </footer>
-   
-   
-   <!--SCRIPTS STARTS HERE-->
-    
-    <!--CORE JS-->
-    
-    <!--jQuery Script-->
-    <script src="vendors/jquery/jquery-3.3.1.min.js"></script>
-    <!--Bootstrap Script-->
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    
-    <!--wow.js-->
-
-    <!--COUNTERUP-->
-    <script src="vendors/waypoints/jquery.waypoints.min.js"></script>
-    <script src="vendors/counterup/jquery.counterup.min.js"></script>
-    
-    <!--Easing-->
-    <script src="vendors/easing/easing.js"></script>
-    
-    <!--END OF CORE JS-->
-    
-    <!--CUSTOM JS-->
-    <script src="js/script.js"></script>
-    <!--END OF CUSTOM JS-->
-    
-    <!--SCRIPTS ENDS HERE-->
 
 </body>
-
 </html>

@@ -1,56 +1,59 @@
 <?php
-include("include/config.php");
+require("includes/config.php");
 
-function parseToXML($htmlStr)
-{
-$xmlStr=str_replace('<','&lt;',$htmlStr);
-$xmlStr=str_replace('>','&gt;',$xmlStr);
-$xmlStr=str_replace('"','&quot;',$xmlStr);
-$xmlStr=str_replace("'",'&#39;',$xmlStr);
-$xmlStr=str_replace("&",'&amp;',$xmlStr);
-return $xmlStr;
-}
+// Start XML file, create parent node
+$doc = domxml_new_doc("1.0");
+$node = $doc->create_element("markers");
+$parnode = $doc->append_child($node);
 
 // Opens a connection to a MySQL server
-// $connection=mysqli_connect ('localhost', $username, $password);
+$conn=mysql_connect('localhost', root, "");
 if (!$conn) {
-  die('Not connected : ' . mysqli_error());
+  die('Not connected : ' . mysql_error());
 }
 
 // Set the active MySQL database
-$db_selected = mysqli_select_db($db, $conn);
+$db_selected = mysql_select_db('jaljeevika', $conn);
 if (!$db_selected) {
-  die ('Can\'t use db : ' . mysqli_error());
+  die ('Can\'t use db : ' . mysql_error());
 }
 
 // Select all the rows in the markers table
-$query = "SELECT * FROM markers WHERE 1";
-$result = mysqli_query($query);
+$query = "SELECT * FROM markers";
+$result = mysql_query($query);
+?>
+  <script>
+      console.log(<?= json_encode($result); ?>);
+  </script>
+<?php
 if (!$result) {
-  die('Invalid query: ' . mysqli_error());
+  die('Invalid query: ' . mysql_error());
+  
 }
 
 header("Content-type: text/xml");
 
-// Start XML file, echo parent node
-echo "<?xml version='1.0' ?>";
-echo '<markers>';
-$ind=0;
-// Iterate through the rows, printing XML nodes for each
-while ($row = @mysqli_fetch_assoc($result)){
+// Iterate through the rows, adding XML nodes for each
+while ($row = @mysql_fetch_assoc($result)){
   // Add to XML document node
-  echo '<marker ';
-  echo 'id="' . $row['marker_id'] . '" ';
-  echo 'name="' . parseToXML($row['mrker_name']) . '" ';
-  echo 'address="' . parseToXML($row['pond_add']) . '" ';
-  echo 'lat="' . $row['lat'] . '" ';
-  echo 'lng="' . $row['lng'] . '" ';
-  echo 'type="' . $row['type'] . '" ';
-  echo '/>';
-  $ind = $ind + 1;
+  $node = $doc->create_element("marker");
+  $newnode = $parnode->append_child($node);
+  ?>
+  <script>
+      console.log(<?= json_encode("hello"); ?>);
+  </script>
+<?php  
+  $newnode->set_attribute("id", $row['marker_id']);
+  $newnode->set_attribute("name", $row['mrker_name']);
+  $newnode->set_attribute("address", $row['pond_add']);
+  $newnode->set_attribute("lat", $row['lat']);
+  $newnode->set_attribute("lng", $row['lng']);
+  $newnode->set_attribute("type", $row['type']);
 }
 
-// End XML file
-echo '</markers>';
+$xmlfile = $doc->dump_mem();
+echo $xmlfile;?>
+<script>
+    console.log(<?= json_encode($xmlfile); ?>);
+</script>
 
-?>
