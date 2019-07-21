@@ -104,12 +104,13 @@ global $connection;
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a  href="#home">Home</a></li>
+                       <li><a  href="index.php">Home</a></li>
                        <li><a  href="training_page.php">Training</a></li>
                        <li><a  href="pond.php">Ponds</a></li>
                        <li><a  href="#testimonials">Schemes</a></li>
                        <li><a  href="Product.php">Inventory</a></li>
                        <li><a  href="#contact">Contact</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
@@ -141,7 +142,7 @@ global $connection;
                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="padding: 10px 40px;font-size: 20px; font-weight: 500">Documnets</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="padding: 10px 40px;font-size: 20px;font-weight: 500">Contact</a>
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="padding: 10px 40px;font-size: 20px;font-weight: 500">AR</a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent" style="margin-top: 15px;">
@@ -163,6 +164,7 @@ global $connection;
                         $count =0;
                         while($count!=$nu){
                             echo "<div class='col-md-3'>
+                            
                         <div class='col-md-3 col-sm-4 image-hovering ' style='height:214px;width:350;margin-right:25px;margin-top:30px;'>
                         ";
 //                            echo $row['expert_id'];
@@ -213,6 +215,10 @@ global $connection;
             <div class="row">
 <!--                    <div class="col-md-3">-->
                        
+            <select id="opt">
+                <option value=1>Marathi</option>
+                <option value=2>English</option>           
+            </select>           
                        <?php
                         require_once("db.php");
                         global $connection;
@@ -221,6 +227,8 @@ global $connection;
                         $result=mysqli_query($connection,$query);
                         $num=mysqli_num_rows($result);
                         $c=0;
+                        
+                    
                         
                         while($c!=$num)
                         {
@@ -236,13 +244,35 @@ global $connection;
                             echo "<div class='w3-panel w3-card-2'><p></p> </div>";
 //                            print_r($row);
                             
-                            echo $row['title'];
+                            echo '<strong>TITLE: ';
+                                echo $row['title'];
+                            echo '</strong>';
                             echo "<br>";
-                            echo $row['step1'];
+                            
+                            echo '<strong>Step1: ';
+                            echo '</strong>';
+                             echo $row['step1'];
+                                
                             echo "<br>";
-                            echo $row['step2'];
+                            
+                            echo '<strong>Step2: ';
+                            echo '</strong>';
+                             echo $row['step2'];
+                               
                             echo "<br>";
-                            echo $row['step3'];
+                            
+                            echo '<strong>Step3: ';
+                            echo '</strong>';
+                             echo $row['step3'];
+                               
+                            echo "<br>";
+                            
+                            echo '<strong>Step4: ';
+                            echo '</strong>';
+                             echo $row['step4'];
+                                
+                            echo "<br>";
+
                             echo "<br>";
                             echo "<br>";
                             echo "</div>";
@@ -405,6 +435,17 @@ India – 416405
         <a href="#home" class="smooth-scroll btn btn-am btn-blue btn-back-to-top hidden-xs hidden-sm" title="home" role="button"><i class="fa fa-angle-up"></i></a>
     </footer>
    
+   
+   <script>
+       $var=Document.getElementById("opt");
+       if($var==1){
+           window.alert("hi");
+       }
+       if($var==2){
+           window.alert("hi");
+       }
+       
+    </script>
    
    <!--SCRIPTS STARTS HERE-->
     

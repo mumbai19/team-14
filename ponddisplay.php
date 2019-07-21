@@ -1,4 +1,4 @@
-
+r
 <html lang="en">
 
 <head>
@@ -59,6 +59,7 @@
                        <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                        <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
                    </ul>
                </div>
            </div>

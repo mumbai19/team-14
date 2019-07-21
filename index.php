@@ -57,7 +57,7 @@
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
                        <li><a class="smooth-scroll" href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
+                       <li><a class="smooth-scroll" href="Information.php">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                        <li><a href="registration.php">Sign Up</a></li>
                        <li><a href="login.php">LOGIN</a></li>
@@ -202,7 +202,7 @@
                      <div class="stats-item">
                          <i class="fa fa-cloud-download fa-5x"></i>
                          <h2><span class="counter">1590</span>+</h2>
-                         <p>Downloads</p>
+                         <p>Fisherman</p>
                      </div>
                  </div> 
                  
@@ -210,7 +210,7 @@
                      <div class="stats-item">
                          <i class="fa fa-star-o fa-5x"></i>
                          <h2><span class="counter">3500</span>+</h2>
-                         <p>Awards</p>
+                         <p>Vendors</p>
                      </div>
                  </div>  
                  
@@ -218,7 +218,7 @@
                      <div class="stats-item">
                          <i class="fa fa-heart-o fa-5x"></i>
                          <h2><span class="counter">1199</span>+</h2>
-                         <p>Likes</p>
+                         <p>Fishes</p>
                      </div>
                  </div>  
                  
@@ -226,7 +226,7 @@
                      <div class="stats-item">
                          <i class="fa fa-check fa-5x"></i>
                          <h2><span class="counter">2200</span>+</h2>
-                         <p>Recommended</p>
+                         <p>Seeds</p>
                      </div>
                  </div>   
                </div><!--.row-->
