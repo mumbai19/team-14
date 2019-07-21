@@ -85,7 +85,7 @@ window.addEventListener('load', function() {
 session_start();
 ob_start();
 $name=$_SESSION['name'];
-$state=$_SESSION['state'];
+$state=$_SESSION['state']='Tamil Nadu';
 ?>
    <!--NAVIGATION-->
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
@@ -105,14 +105,14 @@ $state=$_SESSION['state'];
 
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="training_home.php">Training</a></li>
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="training_page.php">Training</a></li>
                        <li><a class="smooth-scroll" href="pond.php">Ponds</a></li>
                        <li><a  href="information.php">Schemes</a></li>
                        <li><a class="smooth-scroll" href="Product.php">Inventory</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
                        <li><a  href="Chart.php">Visual Charts</a></li>
-                       <button type="button" class="btn btn-default"><?php echo $_SESSION['name']; ?></button>
+                       <button type="button" class="btn btn-default"><?php $_SESSION['name']='Fujusika'; ?></button>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>
@@ -227,15 +227,23 @@ $c=0;
   </div>
   </div>
   
+
  <?php endforeach; ?>
- 
+ <div>
 </div>
-</div>
-<script>
+   <div>
+    </div>
+    
+    
+    
+    <script>
   $(':radio').change(function() {
   console.log('New star rating: ' + this.value);
   });
 </script>
 
-</body>
-</html>
+
+
+
+
+

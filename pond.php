@@ -104,118 +104,59 @@
   //     })
   // }
   </script>
-<div style="display:inline-block;" class="container">
-<!-- Default form login -->
-<div style="text-align:center;" class="col-md-5 mx-auto">
-<form class="text-center border border-light p-5" onsubmit="github(event)" id="form2" enctype="multipart/form-data">
-
-    <p class="h4 mb-4">Pond Quality</p>
-
-  <!-- Name -->
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond"  style="color: black;">
-
-  <!-- Username -->
-    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username" style="color: black;">
-
-    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1" style="color: black;">
-  <input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2" style="color: black;">
-  <div class="form-row mb-4">
-        <div class="col">
-            <!-- Village -->
-            <input type="text" id="defaultRegisterFormDistrict" name="village" class="form-control" placeholder="Village" style="color: black;">
-        </div>
-    <div class="col">
-        <div class="col">
-            <!-- District -->
-            <input type="text" id="defaultRegisterFormDistrict" name="district" class="form-control" placeholder="District" style="color: black;">
-        </div>
-    </div>
-            <!-- City -->
-            <input type="text" id="defaultRegisterFormCity" name="city" class="form-control" placeholder="City" style="color: black;">
-        </div>
-  <div class="form-row mb-4">
-    <div class="col">
-            <!-- State -->
-            <input type="text" id="defaultRegisterFormState" name="state" class="form-control" placeholder="State" style="color: black;">
-        </div>
-        <div class="col">
-            <!-- District -->
-            <input type="text" id="defaultRegisterFormPincode" name="pincode" class="form-control" placeholder="Pincode" style="color: black;">
-        </div>
-  <div class="col">
-            <!-- pH Value -->
-            <input type="text" id="defaultRegisterFormpHvalue" name="ph" class="form-control" placeholder="pH Value of Pond" style="color: black;">
-        </div>
-  <div class="col">
-            <!-- size -->
-            <input type="text" id="defaultRegisterFormpondSize" name="pond_size" class="form-control" placeholder="Pond Size" style="color: black;">
-        </div>
-    <div class="col">
-            <!-- Dissolved O2 Levels -->
-            <input type="text" id="defaultRegisterFormDissolvedO2Levels" name="o2" class="form-control" placeholder="Dissolved O2 Levels" style="color: black;">
-        </div>
-    <div class="col">
-            <!-- Pond Depth -->
-            <input type="text" id="defaultRegisterPonddepth" name="depth" class="form-control" placeholder="Pond Depth" style="color: black;">
-        </div>
-    <div class="col">
-            <!-- Total Dissolved Solutes -->
-            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" name="dissolved_solutes" class="form-control" placeholder="Total Dissolved Solutes" style="color: black;">
-        </div>
-    </div>
 <div class="container" >
 <!-- Default form login -->
 <div class="col-md-5 mx-auto" style="margin-left:300px;border: 3px solid #34C6D3;">
 
 
-<form class="text-center border border-light p-5" method="POST" >
+<form class="text-center border border-light p-5" method="POST" onsubmit="github(event)" id="form2" enctype="multipart/form-data">
 
     <p class="h4 mb-4">Pond Quality</p>
 
 	<!-- Name -->
-    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond">
+    <input type="text" id="defaultLoginFormName" name="name" class="form-control mb-4" placeholder="Name of Pond" style="color:black">
     <br>
 	<!-- Username -->
-    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username">
+    <input type="text" id="defaultLoginFormUsername" name="username" class="form-control mb-4" placeholder="Username" style="color:black">
     <br>
     <!-- Address -->
-    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1">
+    <input type="text" id="defaultLoginFormAddressLine1" name="line1" class="form-control mb-4" placeholder="Address Line 1" style="color:black">
     <br>
-	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2">
+	<input type="text" id="defaultLoginFormAddressLine2" name="line2" class="form-control mb-4" placeholder="Address Line 2" style="color:black">
 	<br>
 	
        
-            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village">
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="Village" style="color:black">
         <br>
             <!-- District -->
-            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District">
+            <input type="text" id="defaultRegisterFormDistrict" class="form-control" placeholder="District" style="color:black">
             
         <br>
    
             <!-- City -->
-            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City">
+            <input type="text" id="defaultRegisterFormCity" class="form-control" placeholder="City" style="color:black">
        <br>
 		
-            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State">
+            <input type="text" id="defaultRegisterFormState" class="form-control" placeholder="State" style="color:black">
         <br>
             <!-- District -->
-            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode">
+            <input type="text" id="defaultRegisterFormPincode" class="form-control" placeholder="Pincode" style="color:black">
         
     
             <!-- pH Value -->
-            <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond">
+            <input type="text" id="defaultRegisterFormpHvalue" class="form-control" placeholder="pH Value of Pond" style="color:black">
     
             <!-- size -->
-            <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size">
+            <input type="text" id="defaultRegisterFormpondSize" class="form-control" placeholder="Pond Size" style="color:black">
 
             <!-- Dissolved O2 Levels -->
-            <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels">
+            <input type="text" id="defaultRegisterFormDissolvedO2Levels" class="form-control" placeholder="Dissolved O2 Levels" style="color:black">
     
             <!-- Pond Depth -->
-            <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth">
+            <input type="text" id="defaultRegisterPonddepth" class="form-control" placeholder="Pond Depth" style="color:black">
     
             <!-- Total Dissolved Solutes -->
-            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes">
+            <input type="text" id="defaultRegisterFormTotalDissolvedSolutes" class="form-control" placeholder="Total Dissolved Solutes" style="color:black">
    
     <!-- Sign in button -->
     <button class="btn btn-info btn-block my-4" type="submit" name="submit" id="button_submit">Check</button>

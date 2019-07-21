@@ -29,6 +29,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- End of Costom Styling css-->
+    
+    <style>
+ 
+    </style>
 </head>
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
@@ -56,9 +60,9 @@
 
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
-                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="information.php">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="Information.php">Schemes</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
                        <li><a href="registration.php">Sign Up</a></li>
                        <li><a href="login.php">LOGIN</a></li>
                    </ul>
@@ -271,6 +275,16 @@ India – 416405
         <a href="#home" class="smooth-scroll btn btn-am btn-blue btn-back-to-top hidden-xs hidden-sm" title="home" role="button"><i class="fa fa-angle-up"></i></a>
     </footer>
    
+   
+   
+   <div id="output"></div>
+      
+<div id="container">
+    <input type="text" id="input" value="">
+</div>
+
+<!-- jquery for enter key press -->      
+<script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
    
    <!--SCRIPTS STARTS HERE-->
     
