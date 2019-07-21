@@ -28,9 +28,40 @@
     <!--Costom Styling css-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- End of Costom Styling css-->
     
     <style>
+
+         /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background:yellow;
+  color: white;
+}
+
  
     </style>
 </head>
@@ -70,6 +101,11 @@
            </div>
        </div>
    </nav>
+
+   <div class="icon-bar">
+  <a href="chatbot/index.html" class="facebook"><i class="fa fa-comment"></i></a>
+  
+</div>
    <!--HOME SECTION-->
    <section id="home" class="home-section">
        <div class="home-cover bg-parallax wow animated fadeIn">
@@ -94,48 +130,35 @@
            <div class="container">
                <div class="row wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                   <!--SERVICE ITEM 1-->
-                   <div class="col-md-4 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <div class="service-item">
                         <div class="service-item-icon">
-                            <i class="fa fa-paint-brush fa-3x"></i>
-                        </div>
+                            <i class="fa fa-pencil-square-o fa-3x"></i>
+                        </div><!--.service-item-icon--> 
                         <div class="service-item-title">
-                           <h3 class="text-heading">Fisherman</h3> 
-                        </div> 
+                           <h3 class="text-heading">Schemes</h3> 
+                        </div> <!--.service-item-title-->
                         <div class="service-item-desc">
-                            <p>Fisherman from rural location</p>
-                         </div>
-                     </div>
-                   </div>
+                            <p>Updated with government schemes</p>
+                        </div><!--.service-item-desc-->
+                     </div><!--.service-item--> 
+                   </div><!--.col-md-4-->
                    <div class="col-md-4 col-sm-6">
                      <div class="service-item">
                         <div class="service-item-icon">
                             <i class="fa fa-laptop fa-3x"></i>
                         </div> 
                         <div class="service-item-title">
-                           <h3 class="text-heading">Website</h3> 
+                           <h3 class="text-heading">Training</h3> 
                         </div> 
                         <div class="service-item-desc">
-                            <p>A proper platform for communication</p>
+                            <p>A proper platform for training the fishermen</p>
                         </div>
                      </div>
                    </div>
                    <!--END OF SERVICE ITEM 2-->
                     <!--SERVICE ITEM 3-->
-                    <div class="col-md-4 col-sm-6">
-                     <div class="service-item">
-                        <div class="service-item-icon">
-                            <i class="fa fa-tablet fa-3x"></i>
-                        </div><!--.service-item-icon--> 
-                        <div class="service-item-title">
-                           <h3 class="text-heading">Mobile App</h3> 
-                        </div> <!--.service-item-title-->
-                        <div class="service-item-desc">
-                            <p>Mobile friendly site</p>
-                        </div><!--.service-item-desc-->
-                     </div><!--.service-item--> 
-                   </div><!--.col-md-4-->
-                    <!--END OF SERVICE ITEM 3-->
+                    
                     <!--SERVICE ITEM 4-->
                     <div class="col-md-4 col-sm-6">
                      <div class="service-item">
@@ -151,36 +174,7 @@
                      </div><!--.service-item--> 
                    </div><!--.col-md-4-->
                     <!--END OF SERVICE ITEM 4-->
-                    <!--SERVICE ITEM 5-->
-                    <div class="col-md-4 col-sm-6">
-                     <div class="service-item">
-                        <div class="service-item-icon">
-                            <i class="fa fa-pencil-square-o fa-3x"></i>
-                        </div><!--.service-item-icon--> 
-                        <div class="service-item-title">
-                           <h3 class="text-heading">Ux Design</h3> 
-                        </div> <!--.service-item-title-->
-                        <div class="service-item-desc">
-                            <p>User Friendly</p>
-                        </div><!--.service-item-desc-->
-                     </div><!--.service-item--> 
-                   </div><!--.col-md-4-->
-                    <!--END OF SERVICE ITEM 5-->
-                    <!--SERVICE ITEM 6-->
-                    <div class="col-md-4 col-sm-6">
-                     <div class="service-item">
-                        <div class="service-item-icon">
-                            <i class="fa fa-support fa-3x"></i>
-                        </div><!--.service-item-icon--> 
-                        <div class="service-item-title">
-                           <h3 class="text-heading">Support</h3> 
-                        </div> <!--.service-item-title-->
-                        <div class="service-item-desc">
-                            <p>Can contact each other easliy</p>
-                        </div><!--.service-item-desc-->
-                     </div><!--.service-item--> 
-                   </div><!--.col-md-4-->
-                    <!--END OF SERVICE ITEM 6-->
+                   
 
 
                </div><!--.row-->
