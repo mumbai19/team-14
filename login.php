@@ -43,7 +43,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                   <a href="#" class="navbar-brand">JALJEEVIKA</a>
+                   <a href="index.php" class="navbar-brand">JALJEEVIKA</a>
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
@@ -167,7 +167,7 @@
                             <p class="copyright">Copyrights @ White Graphics, 2018</p>
                         </div><!--.col-md-6-->
                         <div class="col-md-6 links hidden-sm hidden-xs">
-                            <a href="#" class="bottom-links">Home </a><span>/ </span>
+                            <a href="index.php">Home </a><span>/ </span>
                             <a href="#" class="bottom-links">Services </a><span>/ </span>
                             <a href="#" class="bottom-links">About </a><span>/ </span>
                             <a href="#" class="bottom-links">Work </a><span>/ </span>
