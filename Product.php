@@ -117,6 +117,7 @@ $state=$_SESSION['state'];
                        <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
                        <li><a class="smooth-scroll" href="Product.php">Inventory</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
                        <button type="button" class="btn btn-default"><a class="smooth-scroll" href="logout.php">Logout</a></button>
                    </ul>
                </div>

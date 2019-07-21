@@ -53,6 +53,7 @@
                        <li><a  href="#testimonials">Schemes</a></li>
                        <li><a  href="Product.php">Inventory</a></li>
                        <li><a  href="#contact">Contact</a></li>
+                       <li><a  href="Chart.php">Visual Charts</a></li>
                        <button type="button" class="btn btn-default"><a href="logout.php">Logout</a></button>
                        
                    </ul>
