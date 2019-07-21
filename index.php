@@ -57,7 +57,7 @@
                     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
                        <li><a class="smooth-scroll" href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="Information.php">Schemes</a></li>
+                       <li><a class="smooth-scroll" href="information.php">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
                        <li><a href="registration.php">Sign Up</a></li>
                        <li><a href="login.php">LOGIN</a></li>
