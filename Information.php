@@ -101,7 +101,7 @@
 <table class="table table-hover">
     <tbody>
       <tr>
-        <td>Development of Marine fisheries infrastructure & post-harvest operation</td>
+        <td><a href="https://www.villagesquare.in/2017/01/09/communities-in-andhra-pradesh-find-success-in-inland-fisheries/">Development of Marine fisheries infrastructure & post-harvest operation</a></td>
       </tr>
       <tr>
         <td>National scheme for Welfare for Fishermen</td>
