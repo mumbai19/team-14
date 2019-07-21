@@ -33,6 +33,8 @@
 
 <body class="text-content" data-spy="scroll" data-target=".navbar-inverse" data-offset="65">
    <!--NAVIGATION-->
+   
+   
    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
        <div class="container-fluid">
            <div class="wg-nav-wrapper">
@@ -47,25 +49,17 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                   <li><div id="google_translate_element"></div></li>
-                    <script type="text/javascript">
-                    function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-                    }
-                    </script>
-
-                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
                     
-                       <li><a href="index.php">Home</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a class="smooth-scrol" href="index.php">Home</a></li>
+                       <li><a class="smooth-scrol" href="Information.php">Schemes</a></li>
+                       <li><a class="smooth-scrol" href="#contact">Contact</a></li>
+                       <li><a href="registration.php">Sign Up</a></li>
+                       <li><a href="login.php">LOGIN</a></li>
                    </ul>
                </div>
            </div>
        </div>
    </nav>
-
 <br><br><br><br><br><br>
 
 <br><br><br>

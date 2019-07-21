@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script>
+      
   #mydiv {
    position: fixed;
    top: 50%;
@@ -62,15 +63,20 @@
                </div>
                <div id="wg-menu" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li><a class="smooth-scroll" href="#home">Home</a></li>
-                       <li><a class="smooth-scroll" href="#about">Training</a></li>
-                       <li><a class="smooth-scroll" href="#work">Ponds</a></li>
-                       <li><a class="smooth-scroll" href="#testimonials">Schemes</a></li>
-                       <li><a class="smooth-scroll" href="#pricing">Seeds</a></li>
-                       <li><a class="smooth-scroll" href="#stats">Fishes</a></li>
-                       <li><a class="smooth-scroll" href="#clients">Sign Up</a></li>
+                   <li><div id="google_translate_element"></div></li>
+                    <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                    }
+                    </script>
+
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                    
+                       <li><a class="smooth-scroll" href="index.php">Home</a></li>
+                       <li><a class="smooth-scroll" href="Information.php">Schemes</a></li>
                        <li><a class="smooth-scroll" href="#contact">Contact</a></li>
-                       <li><a class="smooth-scroll" href="#clients">LOGIN</a></li>
+                       <li><a href="registration.php">Sign Up</a></li>
+                       <li><a href="login.php">LOGIN</a></li>
                    </ul>
                </div>
            </div>
